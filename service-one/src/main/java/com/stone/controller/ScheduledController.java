@@ -18,6 +18,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class ScheduledController {
 	/**
 	 * 测试定时任务        6秒执行一次，这个方法
+	 * @Scheduled(cron = "0 40 15 * * ?") 每天15:40触发
+	 * @Scheduled(fixedRate = 60 * 1000)  每60秒执行一次
 	 */
 	@Scheduled(fixedRate = 60 * 1000)
 	@PostMapping(value = "/scheduledDemo")
