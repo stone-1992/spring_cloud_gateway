@@ -27,3 +27,12 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
   instance:
     prefer-ip-address: true
+
+
+security:
+  oauth2:
+    resource:
+      user-info-uri: http://localhost:8300/uaa/principal
+
+
+
