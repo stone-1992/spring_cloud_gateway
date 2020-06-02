@@ -10,7 +10,13 @@
         <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
         <option value="$PROJECT_DIR$/service-one/pom.xml" />
         <option value="$PROJECT_DIR$/service-two/pom.xml" />
+        <option value="$PROJECT_DIR$/stone-platform/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/stone-platform/stone-common/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="1.8" project-jdk-type="JavaSDK" />

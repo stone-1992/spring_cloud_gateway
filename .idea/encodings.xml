@@ -8,5 +8,25 @@
     <file url="file://$PROJECT_DIR$/service-one/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service-two/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service-two/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stone-platform/stone-common/stone-common-datasource/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stone-platform/stone-common/stone-common-datasource/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stone-platform/stone-common/stone-common-dubbo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stone-platform/stone-common/stone-common-dubbo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stone-platform/stone-common/stone-common-model/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stone-platform/stone-common/stone-common-model/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stone-platform/stone-common/stone-common-swagger/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stone-platform/stone-common/stone-common-swagger/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stone-platform/stone-eureka-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stone-platform/stone-eureka-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stone-platform/stone-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stone-platform/stone-gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stone-platform/stone-service-one/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stone-platform/stone-service-one/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stone-platform/stone-service-two/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stone-platform/stone-service-two/src/main/resources" charset="UTF-8" />
   </component>
 </project>

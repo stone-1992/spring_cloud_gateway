@@ -9,3 +9,5 @@
   浏览器输入：http://localhost:8080/service-one/user/who 地址，会出现 this is user ： service-one
   
   浏览器输入：http://localhost:8080/service-two/user/who 地址，会出现 this is user : service-two
+  
+  

@@ -4,11 +4,11 @@ spring:
   cloud:
     gateway:
       routes:
-      - id: service-one
+      - id: service-one1
         uri: lb://service-one # uri以lb://开头（lb代表从注册中心获取服务），后面接的就是你需要转发到的服务名称
         predicates:
-          - Path=/service-one/**     
-      - id: service-two
+          - Path=/service-one/**
+      - id: service-two2
         uri: lb://service-two
         predicates:
           - Path=/service-two/**
