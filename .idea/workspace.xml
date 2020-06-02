@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b092f9ea-d531-407b-876a-98e92e6297a8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/classes/com/stone/EurekaServerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/target/classes/com/stone/EurekaServerApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/classes/com/stone/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/target/classes/com/stone/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-two/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-two/target/classes/META-INF/maven/com.stone/service-two/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-two/target/classes/META-INF/maven/com.stone/service-two/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-two/target/classes/com/stone/ServiceTwoApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-two/target/classes/com/stone/controller/UserController.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../Stone/software/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\Stone\software\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1chvZ1xCdl6ukxeP5kIhBgC0Qtc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunManager" selected="Spring Boot.EurekaServerApplication">
+    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="eureka-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.stone.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.stone.EurekaServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceTwoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="service-two" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.stone.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.stone.ServiceTwoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.EurekaServerApplication" />
+        <item itemvalue="Spring Boot.ServiceTwoApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b092f9ea-d531-407b-876a-98e92e6297a8" name="Default Changelist" comment="" />
+      <created>1590993692052</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590993692052</updated>
+      <workItem from="1590993694208" duration="2419000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1590993992960">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590993992960" />
+    <state width="1879" height="339" key="GridCell.Tab.0.bottom" timestamp="1590994142784">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="339" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590994142784" />
+    <state width="1879" height="339" key="GridCell.Tab.0.center" timestamp="1590994142784">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="339" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590994142784" />
+    <state width="1879" height="339" key="GridCell.Tab.0.left" timestamp="1590994142783">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="339" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590994142783" />
+    <state width="1879" height="339" key="GridCell.Tab.0.right" timestamp="1590994142784">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="339" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590994142784" />
+    <state x="491" y="165" key="SettingsEditor" timestamp="1590994003089">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="491" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1590994003089" />
+  </component>
+</project>
