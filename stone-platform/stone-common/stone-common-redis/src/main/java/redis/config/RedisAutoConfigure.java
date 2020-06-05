@@ -73,7 +73,7 @@ public class RedisAutoConfigure {
      * @param redisConnectionFactory
      * @return
      */
-    @Bean
+    @Bean(value = "redisTemplateNew")
     public <K, V> RedisTemplate<K, V> redisTemplate(RedisConnectionFactory redisConnectionFactory) {
         RedisTemplate<K, V> redisTemplate = new RedisTemplate<>();
         redisTemplate.setConnectionFactory(redisConnectionFactory);

@@ -1,4 +1,4 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.zhcx.business.common.redis.config.RedisAutoConfigure,\
-com.zhcx.business.common.redis.sequence.SequenceAutoConfigure,\
-com.zhcx.business.common.redis.lock.DistributedLockAutoConfigure
+redis.config.RedisAutoConfigure,\
+redis.sequence.SequenceAutoConfigure,\
+redis.lock.DistributedLockAutoConfigure
