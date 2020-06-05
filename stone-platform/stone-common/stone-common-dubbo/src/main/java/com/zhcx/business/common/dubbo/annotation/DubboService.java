@@ -7,7 +7,6 @@ import java.lang.annotation.*;
 /**
  * dubbo服务注解
  * @title 
- * @author 龚进
  * @date 2020年3月3日
  * @version 1.0
  */

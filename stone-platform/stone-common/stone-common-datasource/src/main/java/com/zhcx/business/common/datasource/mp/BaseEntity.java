@@ -8,7 +8,6 @@ import java.util.Date;
  * 数据实体父类
  * 
  * @title
- * @author 龚进
  * @date 2020年5月12日
  * @version 1.0
  */

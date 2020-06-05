@@ -20,7 +20,6 @@ import org.springframework.web.client.RestTemplate;
  * @classname RestConfig
  * @description RestTemplate 配置
  * @date 2020/1/3 15:39
- * @author xhe
  */
 @Configuration
 public class RestConfig {

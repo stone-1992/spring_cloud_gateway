@@ -8,7 +8,6 @@ import com.baomidou.mybatisplus.extension.injector.methods.LogicDeleteByIdWithFi
 import java.util.List;
 
 /**
- * @author xhe
  * @classname MySqlInjector
  * @description 自定义增强sql注入器
  * @date 2020/5/13 10:17

@@ -10,7 +10,6 @@ import org.springframework.data.redis.core.RedisTemplate;
 import redis.sequence.properties.SequenceProperties;
 
 /**
- * @author xhe
  * @classname SequenceAutoConfigure
  * @description redis id生成器自动配置
  * @date 2020/4/24 14:20

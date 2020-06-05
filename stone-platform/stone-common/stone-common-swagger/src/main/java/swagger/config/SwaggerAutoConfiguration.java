@@ -25,7 +25,6 @@ import java.util.*;
 /**
  * swagger自动配置
  *
- * @author 龚进
  * @version 1.0
  * @title
  * @date 2020年2月18日

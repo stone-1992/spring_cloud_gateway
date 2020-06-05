@@ -4,7 +4,6 @@ package redis.sequence.builder;
 import redis.sequence.Sequence;
 
 /**
- * @author xhe
  * @classname SeqBuilder
  * @description 序列号生成器构建者
  * @date 2020/4/24 14:27

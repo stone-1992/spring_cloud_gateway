@@ -15,7 +15,6 @@ import java.util.Locale;
 import java.util.TimeZone;
 
 /**
- * @author xhe
  * @classname JacksonConfig
  * @description Jackson配置
  * @date 2020/1/3 15:39

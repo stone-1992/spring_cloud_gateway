@@ -10,7 +10,6 @@ import java.util.Arrays;
  * @Classname StringEnumValidator
  * @Description
  * @Date 2020/4/21 11:55
- * @author xhe
  */
 public class StringEnumValidator implements ConstraintValidator<StringEnum, String> {
 

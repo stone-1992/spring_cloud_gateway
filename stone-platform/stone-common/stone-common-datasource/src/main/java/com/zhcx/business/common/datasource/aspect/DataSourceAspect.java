@@ -17,7 +17,6 @@ import java.lang.reflect.Method;
  * @classname DataSourceAspect
  * @description 多数据源，切面处理类
  * @date 2019/11/5 13:25
- * @author xhe
  */
 @Aspect
 @Component

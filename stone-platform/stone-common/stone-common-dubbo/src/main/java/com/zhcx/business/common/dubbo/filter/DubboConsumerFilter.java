@@ -11,7 +11,6 @@ import model.dto.AuthUserInfoDTO;
 
 /**
  * dubbo 消费者拦截器
- * @author zfq
  * @version 1.0
  * @Description
  * @date 2020年04月10日　18:15

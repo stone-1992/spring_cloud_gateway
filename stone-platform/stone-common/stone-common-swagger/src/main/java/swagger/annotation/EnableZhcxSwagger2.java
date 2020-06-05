@@ -8,7 +8,6 @@ import java.lang.annotation.*;
 /**
  * ZhcxSwagger注解
  * @title 
- * @author 龚进
  * @date 2020年2月18日
  * @version 1.0
  */

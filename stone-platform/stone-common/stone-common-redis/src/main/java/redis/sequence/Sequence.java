@@ -1,7 +1,6 @@
 package redis.sequence;
 
 /**
- * @author xhe
  * @classname Sequence
  * @description 序列号生成器接口
  * @date 2020/4/24 14:23

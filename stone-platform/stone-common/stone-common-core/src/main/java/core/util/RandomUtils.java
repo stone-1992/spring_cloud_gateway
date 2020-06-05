@@ -3,7 +3,6 @@ package core.util;
 import java.util.Random;
 
 /**
- * @author zfq
  * @version 1.0
  * @Description
  * @date 2020年06月01日　10:05

@@ -7,7 +7,6 @@ import lombok.Data;
  * dubbo配置
  * 
  * @title
- * @author 龚进
  * @date 2020年3月2日
  * @version 1.0
  */

@@ -4,7 +4,6 @@ package core.constant;
  * @classname CommonConstants
  * @description 通用常量
  * @date 2019/11/5 13:25
- * @author xhe
  */
 public interface CommonConstants {
 

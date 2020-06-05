@@ -17,7 +17,6 @@ import java.util.Map;
  * @classname DynamicDataSourceConfig
  * @description 配置多数据源
  * @date 2019/11/5 13:25
- * @author xhe
  */
 @Configuration
 @AutoConfigureBefore(DruidDataSourceAutoConfigure.class)

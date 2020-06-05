@@ -1,7 +1,6 @@
 package redis.constant;
 
 /**
- * @author xhe
  * @classname BaseDataLineRedisConstants
  * @description 基础数据 线路管理Redis key常量
  * @date 2020/5/25 15:03

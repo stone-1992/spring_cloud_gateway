@@ -17,7 +17,6 @@ import java.util.Objects;
  * @classname SensitiveSerialize
  * @description 脱敏序列化
  * @date 2019/12/3 10:50
- * @author xhe
  */
 @NoArgsConstructor
 @AllArgsConstructor

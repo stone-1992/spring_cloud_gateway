@@ -7,7 +7,6 @@ import org.springframework.context.annotation.Configuration;
  * dubbo自动配置类
  * 
  * @title
- * @author 龚进
  * @date 2020年3月3日
  * @version 1.0
  */

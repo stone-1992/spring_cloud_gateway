@@ -6,7 +6,6 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import static redis.constant.BaseRedisConstants.BASE;
 
 /**
- * @author xhe
  * @classname DistributedLockProperties
  * @description
  * @date 2020/4/26 11:49

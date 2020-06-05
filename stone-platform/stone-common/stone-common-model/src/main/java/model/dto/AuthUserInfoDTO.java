@@ -10,7 +10,6 @@ import lombok.experimental.Accessors;
  * 授权用户信息
  * 
  * @title
- * @author 龚进
  * @date 2020年4月2日
  * @version 1.0
  */

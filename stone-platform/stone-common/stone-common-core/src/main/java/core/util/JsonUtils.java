@@ -8,7 +8,6 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import java.util.List;
 
 /**
- * @author zfq
  * @version 1.0
  * @description
  * @date 2020年04月14日 14:20

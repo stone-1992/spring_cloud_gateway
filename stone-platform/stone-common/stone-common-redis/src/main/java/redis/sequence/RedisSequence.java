@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.redis.core.RedisTemplate;
 
 /**
- * @author xhe
  * @classname RedisSequence
  * @description Redis Id生成器
  * @date 2020/4/24 14:25

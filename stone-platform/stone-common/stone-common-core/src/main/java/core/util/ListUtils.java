@@ -10,7 +10,6 @@ import java.util.function.Supplier;
 /**
  * 对象copy工具类
  * @title 
- * @author 龚进
  * @date 2020年3月13日
  * @version 1.0
  */

@@ -7,7 +7,6 @@ import static redis.constant.BaseRedisConstants.BASE;
  * @classname OrgConstants
  * @description application redis key常量
  * @date 2020/4/23 10:03
- * @author xhe
  */
 public interface ApplicationRedisConstants {
 	

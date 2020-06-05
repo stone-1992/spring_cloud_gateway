@@ -11,7 +11,6 @@ import java.util.Objects;
  * 分页对象
  *
  * @title
- * @author 龚进
  * @date 2019年11月12日
  * @version 1.0
  */

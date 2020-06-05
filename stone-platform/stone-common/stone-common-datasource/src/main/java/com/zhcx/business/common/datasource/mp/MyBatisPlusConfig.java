@@ -12,7 +12,6 @@ import org.springframework.context.annotation.Configuration;
 import java.util.Date;
 
 /**
- * @author xhe
  * @classname MyBatisPlusConfig
  * @description MyBatisPlus配置
  * @date 2019/7/18

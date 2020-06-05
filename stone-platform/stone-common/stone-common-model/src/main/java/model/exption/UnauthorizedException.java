@@ -7,7 +7,6 @@ import lombok.EqualsAndHashCode;
  * @classname UnauthorizedException
  * @description 未授权异常401
  * @date 2020/2/11 14:45
- * @author xhe
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

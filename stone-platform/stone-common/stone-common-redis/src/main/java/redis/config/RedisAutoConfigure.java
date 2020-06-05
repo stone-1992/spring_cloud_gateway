@@ -21,7 +21,6 @@ import java.util.Locale;
 import java.util.TimeZone;
 
 /**
- * @author xhe
  * @classname RedisConfig
  * @description redis template配置
  * @date 2020/3/4 9:50

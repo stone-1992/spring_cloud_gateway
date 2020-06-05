@@ -4,7 +4,6 @@ package core.sensitive;
  * @classname SensitiveTypeEnum
  * @description 敏感信息枚举类
  * @date 2019/12/3 10:50
- * @author xhe
  */
 public enum SensitiveTypeEnum {
 

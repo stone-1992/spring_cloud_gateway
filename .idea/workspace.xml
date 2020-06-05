@@ -2,14 +2,91 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b092f9ea-d531-407b-876a-98e92e6297a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/stone-platform/stone-service-one/src/main/java/com/stone/controller/RedisTestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/config/JacksonConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/config/JacksonConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/config/RestConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/config/RestConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/constant/CommonConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/constant/CommonConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/jackjson/JavaTimeModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/jackjson/JavaTimeModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/sensitive/Sensitive.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/sensitive/Sensitive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/sensitive/SensitiveSerialize.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/sensitive/SensitiveSerialize.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/sensitive/SensitiveTypeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/sensitive/SensitiveTypeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/util/DateConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/util/DateConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/util/DesensitizedUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/util/DesensitizedUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/util/JsonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/util/JsonUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/util/ListUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/util/ListUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/util/MyPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/util/MyPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/util/PageBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/util/PageBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/util/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/util/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/util/RandomUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/util/RandomUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/util/SpringContextHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/util/SpringContextHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/validator/Assert.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/validator/Assert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/validator/ValidatorUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/validator/ValidatorUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/validator/annotations/DateTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/validator/annotations/DateTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/validator/annotations/IntegerEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/validator/annotations/IntegerEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/validator/annotations/StringEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/validator/annotations/StringEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/validator/impl/DateTimeValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/validator/impl/DateTimeValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/validator/impl/IntegerEnumValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/validator/impl/IntegerEnumValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/validator/impl/StringEnumValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/src/main/java/core/validator/impl/StringEnumValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-datasource/src/main/java/com/zhcx/business/common/datasource/DataSourceProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-datasource/src/main/java/com/zhcx/business/common/datasource/DataSourceProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-datasource/src/main/java/com/zhcx/business/common/datasource/DynamicDataSourceProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-datasource/src/main/java/com/zhcx/business/common/datasource/DynamicDataSourceProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-datasource/src/main/java/com/zhcx/business/common/datasource/annotation/DataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-datasource/src/main/java/com/zhcx/business/common/datasource/annotation/DataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-datasource/src/main/java/com/zhcx/business/common/datasource/aspect/DataSourceAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-datasource/src/main/java/com/zhcx/business/common/datasource/aspect/DataSourceAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-datasource/src/main/java/com/zhcx/business/common/datasource/config/DynamicContextHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-datasource/src/main/java/com/zhcx/business/common/datasource/config/DynamicContextHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-datasource/src/main/java/com/zhcx/business/common/datasource/config/DynamicDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-datasource/src/main/java/com/zhcx/business/common/datasource/config/DynamicDataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-datasource/src/main/java/com/zhcx/business/common/datasource/config/DynamicDataSourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-datasource/src/main/java/com/zhcx/business/common/datasource/config/DynamicDataSourceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-datasource/src/main/java/com/zhcx/business/common/datasource/config/DynamicDataSourceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-datasource/src/main/java/com/zhcx/business/common/datasource/config/DynamicDataSourceFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-datasource/src/main/java/com/zhcx/business/common/datasource/mp/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-datasource/src/main/java/com/zhcx/business/common/datasource/mp/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-datasource/src/main/java/com/zhcx/business/common/datasource/mp/BaseMapperExpander.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-datasource/src/main/java/com/zhcx/business/common/datasource/mp/BaseMapperExpander.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-datasource/src/main/java/com/zhcx/business/common/datasource/mp/IServiceExpander.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-datasource/src/main/java/com/zhcx/business/common/datasource/mp/IServiceExpander.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-datasource/src/main/java/com/zhcx/business/common/datasource/mp/MyBatisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-datasource/src/main/java/com/zhcx/business/common/datasource/mp/MyBatisPlusConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-datasource/src/main/java/com/zhcx/business/common/datasource/mp/ServiceExpanderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-datasource/src/main/java/com/zhcx/business/common/datasource/mp/ServiceExpanderImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-datasource/src/main/java/com/zhcx/business/common/datasource/mp/SqlInjectorExpander.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-datasource/src/main/java/com/zhcx/business/common/datasource/mp/SqlInjectorExpander.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-datasource/src/main/java/com/zhcx/business/common/datasource/mp/WrapperUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-datasource/src/main/java/com/zhcx/business/common/datasource/mp/WrapperUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-dubbo/src/main/java/com/zhcx/business/common/dubbo/annotation/DubboService.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-dubbo/src/main/java/com/zhcx/business/common/dubbo/annotation/DubboService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-dubbo/src/main/java/com/zhcx/business/common/dubbo/config/DubboAutoConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-dubbo/src/main/java/com/zhcx/business/common/dubbo/config/DubboAutoConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-dubbo/src/main/java/com/zhcx/business/common/dubbo/config/DubboProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-dubbo/src/main/java/com/zhcx/business/common/dubbo/config/DubboProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-dubbo/src/main/java/com/zhcx/business/common/dubbo/constant/DubboConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-dubbo/src/main/java/com/zhcx/business/common/dubbo/constant/DubboConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-dubbo/src/main/java/com/zhcx/business/common/dubbo/filter/DubboConsumerFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-dubbo/src/main/java/com/zhcx/business/common/dubbo/filter/DubboConsumerFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-dubbo/src/main/java/com/zhcx/business/common/dubbo/filter/DubboProviderFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-dubbo/src/main/java/com/zhcx/business/common/dubbo/filter/DubboProviderFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-dubbo/src/main/java/com/zhcx/business/common/dubbo/filter/MyExceptionFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-dubbo/src/main/java/com/zhcx/business/common/dubbo/filter/MyExceptionFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-model/src/main/java/model/context/UserAuthContextHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-model/src/main/java/model/context/UserAuthContextHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-model/src/main/java/model/dto/AuthUserInfoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-model/src/main/java/model/dto/AuthUserInfoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-model/src/main/java/model/exption/BusinessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-model/src/main/java/model/exption/BusinessException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-model/src/main/java/model/exption/CaptchaException.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-model/src/main/java/model/exption/CaptchaException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-model/src/main/java/model/exption/ParamException.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-model/src/main/java/model/exption/ParamException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-model/src/main/java/model/exption/ResponseException.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-model/src/main/java/model/exption/ResponseException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-model/src/main/java/model/exption/UnauthorizedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-model/src/main/java/model/exption/UnauthorizedException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-model/src/main/java/model/group/AddGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-model/src/main/java/model/group/AddGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-model/src/main/java/model/group/EditGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-model/src/main/java/model/group/EditGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-model/src/main/java/model/group/QueryGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-model/src/main/java/model/group/QueryGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-model/src/main/java/model/group/UpdateGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-model/src/main/java/model/group/UpdateGroup.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/src/main/java/redis/config/RedisAutoConfigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/src/main/java/redis/config/RedisAutoConfigure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/src/main/resources/META-INF/spring.factories" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/src/main/resources/META-INF/spring.factories" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/target/classes/META-INF/spring.factories" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/target/classes/META-INF/spring.factories" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/target/classes/redis/config/RedisAutoConfigure.class" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/target/classes/redis/config/RedisAutoConfigure.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stone-platform/stone-service-one/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-service-one/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/src/main/java/redis/constant/ApplicationRedisConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/src/main/java/redis/constant/ApplicationRedisConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/src/main/java/redis/constant/BaseDataRedisConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/src/main/java/redis/constant/BaseDataRedisConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/src/main/java/redis/constant/BaseRedisConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/src/main/java/redis/constant/BaseRedisConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/src/main/java/redis/constant/CaptchaRedisConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/src/main/java/redis/constant/CaptchaRedisConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/src/main/java/redis/constant/DictRedisConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/src/main/java/redis/constant/DictRedisConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/src/main/java/redis/lock/AbstractDistributedLock.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/src/main/java/redis/lock/AbstractDistributedLock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/src/main/java/redis/lock/DistributedLock.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/src/main/java/redis/lock/DistributedLock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/src/main/java/redis/lock/DistributedLockAutoConfigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/src/main/java/redis/lock/DistributedLockAutoConfigure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/src/main/java/redis/lock/DistributedLockProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/src/main/java/redis/lock/DistributedLockProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/src/main/java/redis/lock/RedisDistributedLock.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/src/main/java/redis/lock/RedisDistributedLock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/src/main/java/redis/sequence/RedisSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/src/main/java/redis/sequence/RedisSequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/src/main/java/redis/sequence/Sequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/src/main/java/redis/sequence/Sequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/src/main/java/redis/sequence/SequenceAutoConfigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/src/main/java/redis/sequence/SequenceAutoConfigure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/src/main/java/redis/sequence/builder/SeqBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/src/main/java/redis/sequence/builder/SeqBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/src/main/java/redis/sequence/properties/SequenceProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/src/main/java/redis/sequence/properties/SequenceProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/src/main/java/redis/util/RedisUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/src/main/java/redis/util/RedisUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-swagger/src/main/java/swagger/annotation/EnableZhcxSwagger2.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-swagger/src/main/java/swagger/annotation/EnableZhcxSwagger2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-swagger/src/main/java/swagger/config/SwaggerAutoConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-swagger/src/main/java/swagger/config/SwaggerAutoConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-swagger/src/main/java/swagger/config/SwaggerProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-swagger/src/main/java/swagger/config/SwaggerProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-gateway/src/main/java/com/stone/ApiCateWayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-gateway/src/main/java/com/stone/ApiCateWayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-gateway/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-gateway/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-gateway/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-gateway/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-gateway/target/classes/bootstrap.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stone-platform/stone-gateway/target/classes/com/stone/ApiCateWayApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/stone-platform/stone-gateway/target/classes/com/stone/ApiCateWayApplication.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +123,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/stone-platform/stone-service-two/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/stone-platform/stone-gateway/src/main/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -68,14 +145,14 @@
       <recent name="com.stone.mapper" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\1\mywork\spring_cloud_gateway\stone-platform\stone-service-two\src\main\resources" />
       <recent name="D:\1\mywork\spring_cloud_gateway\stone-platform\stone-gateway\src\main\resources" />
+      <recent name="D:\1\mywork\spring_cloud_gateway\stone-platform\stone-service-two\src\main\resources" />
       <recent name="D:\1\mywork\spring_cloud_gateway\stone-platform\stone-common\stone-common-datasource" />
       <recent name="D:\1\mywork\spring_cloud_gateway\stone-platform\stone-service-one\src\main\resources" />
       <recent name="D:\1\mywork\spring_cloud_gateway\stone-platform\stone-service-two\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ServiceOneApplication (1)">
+  <component name="RunManager" selected="Spring Boot.ServiceTwoApplication (1)">
     <configuration name="ApiCateWayApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="stone-gateway" />
       <extension name="coverage">
@@ -143,9 +220,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ServiceOneApplication (1)" />
         <item itemvalue="Spring Boot.ApiCateWayApplication (1)" />
         <item itemvalue="Spring Boot.ServiceTwoApplication (1)" />
+        <item itemvalue="Spring Boot.ServiceOneApplication (1)" />
         <item itemvalue="Spring Boot.EurekaServerApplication (1)" />
         <item itemvalue="Spring Boot.ApiCateWayApplication" />
       </list>
@@ -165,7 +242,7 @@
       <option name="presentableId" value="Default" />
       <updated>1590993692052</updated>
       <workItem from="1590993694208" duration="20841000" />
-      <workItem from="1591253900469" duration="10906000" />
+      <workItem from="1591253900469" duration="15214000" />
     </task>
     <servers />
   </component>
@@ -173,10 +250,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="440" y="94" key="#Project_Structure" timestamp="1591099094085">
+    <state x="440" y="94" key="#Project_Structure" timestamp="1591339197637">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1591099094085" />
+    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1591339197637" />
     <state x="765" y="227" key="#com.intellij.ide.util.MemberChooser" timestamp="1591252545784">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -185,62 +262,62 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590993992960" />
-    <state width="1879" height="345" key="GridCell.Tab.0.bottom" timestamp="1591327610504">
+    <state width="1879" height="345" key="GridCell.Tab.0.bottom" timestamp="1591338093645">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="345" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591327610504" />
-    <state width="1879" height="345" key="GridCell.Tab.0.center" timestamp="1591327610504">
+    <state width="1879" height="345" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591338093645" />
+    <state width="1879" height="345" key="GridCell.Tab.0.center" timestamp="1591338093645">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="345" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591327610504" />
-    <state width="1879" height="345" key="GridCell.Tab.0.left" timestamp="1591327610504">
+    <state width="1879" height="345" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591338093645" />
+    <state width="1879" height="345" key="GridCell.Tab.0.left" timestamp="1591338093645">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="345" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591327610504" />
-    <state width="1879" height="345" key="GridCell.Tab.0.right" timestamp="1591327610504">
+    <state width="1879" height="345" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591338093645" />
+    <state width="1879" height="345" key="GridCell.Tab.0.right" timestamp="1591338093645">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="345" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591327610504" />
-    <state width="1879" height="345" key="GridCell.Tab.1.bottom" timestamp="1591327610424">
+    <state width="1879" height="345" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591338093645" />
+    <state width="1879" height="345" key="GridCell.Tab.1.bottom" timestamp="1591338093541">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="345" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591327610424" />
-    <state width="1879" height="345" key="GridCell.Tab.1.center" timestamp="1591327610424">
+    <state width="1879" height="345" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591338093541" />
+    <state width="1879" height="345" key="GridCell.Tab.1.center" timestamp="1591338093541">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="345" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591327610424" />
-    <state width="1879" height="345" key="GridCell.Tab.1.left" timestamp="1591327610424">
+    <state width="1879" height="345" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591338093541" />
+    <state width="1879" height="345" key="GridCell.Tab.1.left" timestamp="1591338093541">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="345" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591327610424" />
-    <state width="1879" height="345" key="GridCell.Tab.1.right" timestamp="1591327610424">
+    <state width="1879" height="345" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591338093541" />
+    <state width="1879" height="345" key="GridCell.Tab.1.right" timestamp="1591338093541">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="345" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591327610424" />
-    <state width="1879" height="345" key="GridCell.Tab.2.bottom" timestamp="1591327610424">
+    <state width="1879" height="345" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591338093541" />
+    <state width="1879" height="345" key="GridCell.Tab.2.bottom" timestamp="1591338093541">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="345" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591327610424" />
-    <state width="1879" height="345" key="GridCell.Tab.2.center" timestamp="1591327610424">
+    <state width="1879" height="345" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591338093541" />
+    <state width="1879" height="345" key="GridCell.Tab.2.center" timestamp="1591338093541">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="345" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591327610424" />
-    <state width="1879" height="345" key="GridCell.Tab.2.left" timestamp="1591327610424">
+    <state width="1879" height="345" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591338093541" />
+    <state width="1879" height="345" key="GridCell.Tab.2.left" timestamp="1591338093541">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="345" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591327610424" />
-    <state width="1879" height="345" key="GridCell.Tab.2.right" timestamp="1591327610424">
+    <state width="1879" height="345" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591338093541" />
+    <state width="1879" height="345" key="GridCell.Tab.2.right" timestamp="1591338093541">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1879" height="345" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591327610424" />
+    <state width="1879" height="345" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591338093541" />
     <state x="491" y="165" key="SettingsEditor" timestamp="1591254669966">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="491" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1591254669966" />
-    <state x="658" y="262" width="604" height="516" key="find.popup" timestamp="1591089107759">
+    <state x="658" y="262" width="776" height="516" key="find.popup" timestamp="1591339404676">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="658" y="262" width="604" height="516" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1591089107759" />
+    <state x="658" y="262" width="776" height="516" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1591339404676" />
     <state x="389" y="177" key="new project wizard" timestamp="1591179097506">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

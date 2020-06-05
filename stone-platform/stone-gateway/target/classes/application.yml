@@ -1,15 +1,20 @@
-#spring:
-#  cloud:
-#    gateway:
-#      routes:
-#      - id: service-one
-#        uri: lb://service-one # uri以lb://开头（lb代表从注册中心获取服务），后面接的就是你需要转发到的服务名称
-#        predicates:
-#          - Path=/service-one/**
-#      - id: service-two
-#        uri: lb://service-two
-#        predicates:
-#          - Path=/service-two/**
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: false
+      routes:
+      - id: service-one
+        uri: lb://service-one  # uri以lb://开头（lb代表从注册中心获取服务），后面接的就是你需要转发到的服务名称
+        order: 8000
+        predicates:
+          - Path=/service-one/**
+      - id: service-two
+        uri: lb://service-two
+        order: 8001
+        predicates:
+          - Path=/service-two/**
 logging:
   level:
     org.springframework.cloud.gateway: TRACE
@@ -29,12 +34,4 @@ eureka:
 #  oauth2:
 #    resource:
 #      user-info-uri: http://localhost:8300/uaa/principal
-spring:
-  cloud:
-    gateway:
-      discovery:
-        locator:
-          enabled: true
-          lower-case-service-id: true
-
 

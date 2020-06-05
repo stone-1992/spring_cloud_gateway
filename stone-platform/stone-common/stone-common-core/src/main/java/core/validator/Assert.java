@@ -7,7 +7,6 @@
 // * @classname Assert
 // * @description 断言
 // * @date 2020/3/18 9:49
-// * @author  by xhe
 // */
 //public class Assert {
 //

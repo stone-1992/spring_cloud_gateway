@@ -5,7 +5,6 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 
 
 /**
- * @author xhe
  * @classname SequenceProperties
  * @description redis id生成器属性
  * @date 2020/4/24 14:05
