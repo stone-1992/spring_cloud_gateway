@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/stone-common-core.iml" filepath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-core/stone-common-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/stone-platform/stone-common/stone-common-datasource/stone-common-datasource.iml" filepath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-datasource/stone-common-datasource.iml" />
       <module fileurl="file://$PROJECT_DIR$/stone-platform/stone-common/stone-common-dubbo/stone-common-dubbo.iml" filepath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-dubbo/stone-common-dubbo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stone-platform/stone-common/stone-common-kafka/stone-common-kafka.iml" filepath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-kafka/stone-common-kafka.iml" />
       <module fileurl="file://$PROJECT_DIR$/stone-platform/stone-common/stone-common-model/stone-common-model.iml" filepath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-model/stone-common-model.iml" />
       <module fileurl="file://$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/stone-common-redis.iml" filepath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/stone-common-redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/stone-platform/stone-common/stone-common-swagger/stone-common-swagger.iml" filepath="$PROJECT_DIR$/stone-platform/stone-common/stone-common-swagger/stone-common-swagger.iml" />

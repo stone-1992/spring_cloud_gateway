@@ -3,7 +3,6 @@ package redis.sequence.properties;
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-import static com.zhcx.business.common.redis.constant.BaseRedisConstants.BASE;
 
 /**
  * @author xhe
@@ -17,7 +16,7 @@ public class SequenceProperties {
     /**
      * 自增key前缀
      */
-    private String key = BASE + "uuid";
+    private String key = "uuid";
     /**
      * 每次自增步长
      */

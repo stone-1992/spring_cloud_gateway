@@ -10,4 +10,6 @@
   
   浏览器输入：http://localhost:8080/service-two/user/who 地址，会出现 this is user : service-two
   
+2、项目Swagger2接口地址
+  http://localhost:8001/service-one/doc.html#/home  
   

@@ -4,12 +4,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/user")
+@RequestMapping("/person")
 public class UserController {
 	
-	@RequestMapping("who")
+	@RequestMapping("getone")
 	public String getUser() {
 		
-		return "this is user : service-two";
+		return "this is person : service-two - getone";
 	}
 }

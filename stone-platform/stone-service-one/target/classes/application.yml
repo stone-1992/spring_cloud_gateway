@@ -1,12 +1,23 @@
 spring:
   application:
     name: service-one
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 172.16.102.152:8848
+        namespace: f4ec8ee3-b06c-4b61-b7ea-ac9b00a5a0b2
 server:
   port: 8001
   servlet:
     context-path: /service-one
 
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/    
+
+
+
+# eureka 注册中心配置
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka/

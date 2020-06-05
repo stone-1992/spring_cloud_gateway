@@ -14,6 +14,7 @@
         <module name="service-two" />
         <module name="stone-common-datasource" />
         <module name="stone-common-core" />
+        <module name="stone-common-kafka" />
         <module name="stone-gateway" />
         <module name="eureka-server" />
         <module name="api-gateway" />
@@ -31,6 +32,7 @@
       <module name="stone-common-core" target="1.8" />
       <module name="stone-common-datasource" target="1.8" />
       <module name="stone-common-dubbo" target="1.8" />
+      <module name="stone-common-kafka" target="1.8" />
       <module name="stone-common-model" target="1.8" />
       <module name="stone-common-redis" target="1.8" />
       <module name="stone-common-swagger" target="1.8" />

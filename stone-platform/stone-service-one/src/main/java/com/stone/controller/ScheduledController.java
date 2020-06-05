@@ -3,6 +3,7 @@ package com.stone.controller;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import io.swagger.annotations.Api;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author 周泽星
  *
  */
+@Api(tags = "定时任务")
 @RestController
 @Component
 public class ScheduledController {

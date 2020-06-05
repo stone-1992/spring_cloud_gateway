@@ -14,6 +14,8 @@
     <file url="file://$PROJECT_DIR$/stone-platform/stone-common/stone-common-datasource/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stone-platform/stone-common/stone-common-dubbo/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stone-platform/stone-common/stone-common-dubbo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stone-platform/stone-common/stone-common-kafka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stone-platform/stone-common/stone-common-kafka/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stone-platform/stone-common/stone-common-model/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stone-platform/stone-common/stone-common-model/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stone-platform/stone-common/stone-common-redis/src/main/java" charset="UTF-8" />

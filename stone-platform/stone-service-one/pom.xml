@@ -21,9 +21,37 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <dependency>
+        <!-- eureka 注册中心-->
+        <!--<dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>-->
+
+        <!-- swagger -->
+        <dependency>
+            <groupId>com.stone</groupId>
+            <artifactId>stone-common-swagger</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+
+        <!-- 数据库 -->
+        <dependency>
+            <groupId>com.stone</groupId>
+            <artifactId>stone-common-datasource</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+
+        <!-- redis -->
+        <!--<dependency>
+            <groupId>com.stone</groupId>
+            <artifactId>stone-common-redis</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>-->
+
+        <!-- 阿里nacos注册中心 -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
     </dependencies>
 </project>

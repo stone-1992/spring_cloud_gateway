@@ -18,6 +18,7 @@
         <module>stone-common-model</module>
         <module>stone-common-dubbo</module>
         <module>stone-common-datasource</module>
+        <module>stone-common-kafka</module>
     </modules>
 
 
