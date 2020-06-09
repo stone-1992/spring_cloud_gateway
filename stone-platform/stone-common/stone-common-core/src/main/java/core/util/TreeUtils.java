@@ -41,6 +41,48 @@ public class TreeUtils<T> {
 	    }
 	    return topList;
 	}
+
+	/**
+	 *
+	 * @param originalList			数据源
+	 * @param keyName				唯一标识字段名称，例如表数据：id，默认 id
+	 * @param parentFieldName		标识父级节点字段：例如：parentId，默认 parentId
+	 * @param childrenFieldName		子级List节点名称：例如：children，默认 children
+	 * @param topValue				判断是否为最父级顶级节点的值（parentFieldName）：例如：菜单中用0表示最顶层节点，默认 0
+	 * @return
+	 * @throws Exception
+	 */
+	public static <T> List<T> getTree(List<T> originalList, String keyName, String parentFieldName, String childrenFieldName, String topValue) throws Exception{
+		if(StrUtil.isBlank(keyName)){
+			keyName = "id";
+		}
+		if(StrUtil.isBlank(parentFieldName)) {
+			parentFieldName = "parentId";
+		}
+		if(StrUtil.isBlank(childrenFieldName)) {
+			childrenFieldName = "children";
+		}
+		if(StrUtil.isBlank(topValue)){
+			topValue = "0";
+		}
+		// 获取根节点，即找出父节点为0的对象
+		List<T> topList = new ArrayList<>();
+		if(CollUtil.isNotEmpty(originalList)) {
+			for (int i = 0; i < originalList.size(); i++) {
+				T t = originalList.get(i);
+				Object parentId = ReflectUtil.getFieldValue(t, parentFieldName);
+				if (topValue.equals(String.valueOf(parentId))) {
+					topList.add(t);
+				}
+			}
+			// 将根节点从原始list移除，减少下次处理数据
+			originalList.removeAll(topList);
+			// 递归封装树
+			fillTree(topList, originalList, keyName, parentFieldName, childrenFieldName);
+
+		}
+		return topList;
+	}
 	
 	/**
 	 * 封装树
