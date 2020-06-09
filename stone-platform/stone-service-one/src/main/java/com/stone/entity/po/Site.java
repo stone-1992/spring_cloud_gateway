@@ -1,4 +1,4 @@
-package com.stone.po;
+package com.stone.entity.po;
 
 import com.baomidou.mybatisplus.annotation.*;
 import com.zhcx.business.common.datasource.mp.BaseEntity;
@@ -37,12 +37,6 @@ public class Site extends BaseEntity {
      */
     @TableField(value = "site_name")
     private String siteName;
-
-    /**
-     * 站点类型 对应字典type:site_type;1-首末站,2-中途站,3-混合站
-     */
-    /*@TableField(value = "site_type")
-    private String siteType;*/
 
     /**
      * 站台类型 对应字典type:site_station_type;1-直线式,2-港湾式

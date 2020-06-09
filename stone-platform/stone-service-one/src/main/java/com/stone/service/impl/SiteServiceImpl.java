@@ -2,7 +2,7 @@ package com.stone.service.impl;
 
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.stone.mapper.SiteMapper;
-import com.stone.po.Site;
+import com.stone.entity.po.Site;
 import com.stone.service.SiteService;
 import com.zhcx.business.common.datasource.mp.ServiceExpanderImpl;
 import org.springframework.stereotype.Service;

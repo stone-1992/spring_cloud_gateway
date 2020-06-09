@@ -9,11 +9,6 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-/**
- * 定时任务
- * @author 周泽星
- *
- */
 @Api(tags = "定时任务")
 @RestController
 @Component

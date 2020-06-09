@@ -19,6 +19,8 @@
         <module>stone-common-dubbo</module>
         <module>stone-common-datasource</module>
         <module>stone-common-kafka</module>
+        <module>stone-common-async</module>
+        <module>stone-common-poi</module>
     </modules>
 
 
