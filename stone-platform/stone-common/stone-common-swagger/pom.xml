@@ -8,7 +8,7 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
+    <description>swagger接口文档</description>
     <artifactId>stone-common-swagger</artifactId>
 
     <dependencies>
