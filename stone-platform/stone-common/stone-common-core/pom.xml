@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <packaging>jar</packaging>
-
+    <description>公共核心模块</description>
     <artifactId>stone-common-core</artifactId>
 
     <dependencies>

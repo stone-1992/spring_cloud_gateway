@@ -106,7 +106,6 @@
     <orderEntry type="library" name="Maven: com.github.xiaoymin:knife4j-spring:2.0.2" level="project" />
     <orderEntry type="library" name="Maven: com.github.xiaoymin:knife4j-annotations:2.0.2" level="project" />
     <orderEntry type="library" name="Maven: com.github.xiaoymin:knife4j-core:2.0.2" level="project" />
-    <orderEntry type="library" name="Maven: org.javassist:javassist:3.25.0-GA" level="project" />
     <orderEntry type="library" name="Maven: io.springfox:springfox-bean-validators:2.9.2" level="project" />
     <orderEntry type="library" name="Maven: com.github.xiaoymin:knife4j-spring-ui:2.0.2" level="project" />
     <orderEntry type="module" module-name="stone-common-datasource" />
@@ -138,7 +137,6 @@
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-redis:2.2.3.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-keyvalue:2.2.3.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-commons:2.2.3.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-tx:5.2.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-oxm:5.2.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context-support:5.2.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: io.lettuce:lettuce-core:5.2.1.RELEASE" level="project" />
@@ -217,6 +215,27 @@
     <orderEntry type="library" name="Maven: com.sun.xml.fastinfoset:FastInfoset:1.2.16" level="project" />
     <orderEntry type="library" name="Maven: javax.servlet:javax.servlet-api:4.0.1" level="project" />
     <orderEntry type="library" name="Maven: cn.hutool:hutool-all:5.1.4" level="project" />
+    <orderEntry type="module" module-name="stone-common-kafka" />
+    <orderEntry type="library" name="Maven: org.springframework.kafka:spring-kafka:2.3.4.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.kafka:kafka-clients:2.3.1" level="project" />
+    <orderEntry type="library" name="Maven: com.github.luben:zstd-jni:1.4.0-1" level="project" />
+    <orderEntry type="library" name="Maven: org.lz4:lz4-java:1.6.0" level="project" />
+    <orderEntry type="library" name="Maven: org.xerial.snappy:snappy-java:1.1.7.3" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.retry:spring-retry:1.2.4.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-messaging:5.2.2.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-tx:5.2.2.RELEASE" level="project" />
+    <orderEntry type="module" module-name="stone-common-dubbo" />
+    <orderEntry type="library" name="Maven: com.alibaba.boot:dubbo-spring-boot-starter:0.2.0" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba:dubbo:2.6.2" level="project" />
+    <orderEntry type="library" name="Maven: org.javassist:javassist:3.20.0-GA" level="project" />
+    <orderEntry type="library" name="Maven: org.jboss.netty:netty:3.2.5.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.zookeeper:zookeeper:3.4.9" level="project" />
+    <orderEntry type="library" name="Maven: jline:jline:0.9.94" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty:3.10.5.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.curator:curator-framework:4.0.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.curator:curator-client:4.0.1" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba.boot:dubbo-spring-boot-autoconfigure:0.2.0" level="project" />
+    <orderEntry type="library" name="Maven: com.stone:stone-model:1.0.0-SNAPSHOT" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.projectlombok:lombok:1.18.10" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-configuration-processor:2.2.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.2.2.RELEASE" level="project" />

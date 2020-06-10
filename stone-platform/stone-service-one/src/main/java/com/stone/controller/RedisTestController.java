@@ -1,7 +1,7 @@
 package com.stone.controller;
 
 
-import core.util.R;
+import com.stone.core.util.R;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import model.exption.BusinessException;
@@ -11,7 +11,7 @@ import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import redis.lock.DistributedLock;
+import com.stone.redis.lock.DistributedLock;
 
 @Api(tags = "Redis测试接口")
 @RequestMapping("/redisTest")
@@ -36,7 +36,7 @@ public class RedisTestController {
 			o = "test";
 		}
 		stringObjectValueOperations.set(REDIS_KEY, o);
-		return R.ok("this is user : service-one1 - getone");
+		return R.ok();
 	}
 
 

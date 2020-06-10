@@ -8,8 +8,9 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
+    <description>异步支持</description>
     <artifactId>stone-common-async</artifactId>
+    <packaging>jar</packaging>
 
     <dependencies>
         <dependency>

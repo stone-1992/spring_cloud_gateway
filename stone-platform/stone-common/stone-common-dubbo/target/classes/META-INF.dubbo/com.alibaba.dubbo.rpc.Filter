@@ -1,0 +1,3 @@
+DubboConsumerFilter=com.stone.common.dubbo.filter.DubboConsumerFilter
+DubboProviderFilter=com.stone.common.dubbo.filter.DubboProviderFilter
+MyExceptionFilter=com.stone.common.dubbo.filter.MyExceptionFilter
