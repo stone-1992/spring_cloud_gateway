@@ -2,7 +2,7 @@ package com.stone.entity.vo;
 
 import com.alibaba.excel.annotation.ExcelProperty;
 import com.stone.excel.GenderConverter;
-import core.validator.annotations.IntegerEnum;
+import com.stone.core.validator.annotations.IntegerEnum;
 import io.swagger.annotations.ApiModel;
 import lombok.Data;
 import model.group.AddGroup;

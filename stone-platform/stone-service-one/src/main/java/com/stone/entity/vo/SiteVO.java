@@ -1,6 +1,6 @@
 package com.stone.entity.vo;
 
-import core.validator.annotations.BigDecimalCheck;
+import com.stone.core.validator.annotations.BigDecimalCheck;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -9,6 +9,7 @@ import org.hibernate.validator.constraints.Length;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import java.io.Serializable;
 import java.math.BigDecimal;
 
 /**
@@ -18,7 +19,9 @@ import java.math.BigDecimal;
  */
 @ApiModel("站点对象")
 @Data
-public class SiteVO {
+public class SiteVO implements Serializable {
+
+    private static final long serialVersionUID = -8233376291920850306L;
 
     @ApiModelProperty("场站Id")
     private Long id;

@@ -1,10 +1,11 @@
 package com.stone.entity.po;
 
 import com.baomidou.mybatisplus.annotation.*;
-import com.zhcx.business.common.datasource.mp.BaseEntity;
+import com.stone.common.datasource.mp.BaseEntity;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
 /**
@@ -15,7 +16,12 @@ import java.math.BigDecimal;
 @TableName("bp_site")
 @Data
 @EqualsAndHashCode(callSuper = true)
-public class Site extends BaseEntity {
+public class Site extends BaseEntity implements Serializable {
+
+    /**
+     * 需要实现 Serializable 接口，不然在 dubbo 调用的时候，调不通
+     */
+    private static final long serialVersionUID = -8233376222920850306L;
 
     @TableId(value = "id", type = IdType.INPUT)
     private Long id;

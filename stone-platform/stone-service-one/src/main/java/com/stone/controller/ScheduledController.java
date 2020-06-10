@@ -19,7 +19,6 @@ public class ScheduledController {
 	 * @Scheduled(fixedRate = 60 * 1000)  每60秒执行一次
 	 */
 	@Scheduled(fixedRate = 60 * 1000)
-	@PostMapping(value = "/scheduledDemo")
 	public void testTasks() {
 		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		String str = null;

@@ -1,4 +1,4 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.zhcx.business.common.datasource.config.DynamicDataSourceConfig,\
-  com.zhcx.business.common.datasource.mp.MyBatisPlusConfig,\
-  com.zhcx.business.common.datasource.aspect.DataSourceAspect
+  com.stone.common.datasource.config.DynamicDataSourceConfig,\
+  com.stone.common.datasource.mp.MyBatisPlusConfig,\
+  com.stone.common.datasource.aspect.DataSourceAspect
