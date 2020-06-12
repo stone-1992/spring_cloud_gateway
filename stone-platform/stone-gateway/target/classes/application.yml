@@ -4,6 +4,7 @@ spring:
       discovery:
         locator:
           enabled: false
+      # 配置路由，服务从nacos 中心中获取
       routes:
       - id: service-one
         uri: lb://service-one  # uri以lb://开头（lb代表从注册中心获取服务），后面接的就是你需要转发到的服务名称
@@ -21,12 +22,14 @@ logging:
     org.springframework.http.server.reactive: DEBUG
     org.springframework.web.reactive: DEBUG
     reactor.ipc.netty: DEBUG
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
-  instance:
-    prefer-ip-address: true
+
+# eureka 注册中心
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka/
+#  instance:
+#    prefer-ip-address: true
 
 
 # 集成Oauth2

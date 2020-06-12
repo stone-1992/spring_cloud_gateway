@@ -16,6 +16,8 @@
         <module>stone-service-one</module>
         <module>stone-eureka-server</module>
         <module>stone-service-two</module>
+        <module>stone-auth</module>
+        <module>stone-gateway-zuul</module>
     </modules>
 
     <properties>

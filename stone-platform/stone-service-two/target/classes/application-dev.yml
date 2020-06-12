@@ -38,7 +38,7 @@ logging:
   level:
     com.zhcx.business.basedata.infrastructure.mapper: debug
 swagger:
-  title: 基础设施管理接口文档
+  title: 接口文档
   enabled: true
 ##多数据源的配置
 #dynamic:

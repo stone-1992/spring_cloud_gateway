@@ -1,0 +1,37 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: @artifactId@
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${zhcx.business.nacos.server-addr.${spring.profiles.active}}
+        namespace: ${zhcx.business.nacos.config.namespace.${spring.profiles.active}}
+      config:
+        server-addr: ${zhcx.business.nacos.server-addr.${spring.profiles.active}}
+        file-extension: yml
+        namespace: ${zhcx.business.nacos.config.namespace.${spring.profiles.active}}
+  profiles:
+    active: dev
+#        shared-configs:
+#          - data-id: @artifactId@-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
+#            refresh: true
+#        refresh-enabled: true
+ribbon:
+  eager-load:
+    #开启饥饿加载
+    enabled: true
+    clients: business-user-center-biz
+zhcx:
+  business:
+    nacos:
+      config:
+        namespace:
+          #dev: 4081c90c-462a-4c9c-8442-804c712e4dff
+          test: 4081c90c-462a-4c9c-8442-804c712e4dff
+          aliyun-prod: 34a062b0-53f8-42b0-8761-8de0df2bdcdb
+      server-addr:
+        dev: 172.16.102.152:8848
+        test: 172.16.102.152:8848
+        aliyun-prod: 10.1.29.99:8848

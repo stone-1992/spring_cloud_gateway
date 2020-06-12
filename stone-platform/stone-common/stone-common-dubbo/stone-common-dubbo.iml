@@ -41,9 +41,8 @@
     <orderEntry type="library" name="Maven: org.apache.curator:curator-client:4.0.1" level="project" />
     <orderEntry type="library" name="Maven: com.google.guava:guava:20.0" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba.boot:dubbo-spring-boot-autoconfigure:0.2.0" level="project" />
-    <orderEntry type="library" name="Maven: com.stone:stone-model:1.0.0-SNAPSHOT" level="project" />
-    <orderEntry type="module" module-name="stone-common-core" />
     <orderEntry type="module" module-name="stone-common-model" />
+    <orderEntry type="module" module-name="stone-common-core" />
     <orderEntry type="library" name="Maven: io.swagger:swagger-annotations:1.5.22" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.5.3" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.4.12" level="project" />
