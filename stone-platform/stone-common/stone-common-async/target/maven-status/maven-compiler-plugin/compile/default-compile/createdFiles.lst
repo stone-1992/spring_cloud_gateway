@@ -1,0 +1,5 @@
+com\stone\common\async\config\AsyncAutoConfiguration.class
+com\stone\common\async\properties\AsyncProperties.class
+META-INF\spring-configuration-metadata.json
+com\stone\common\async\config\AsyncAutoConfiguration$CustomRejectedExecutionHandler.class
+com\stone\common\async\config\AsyncAutoConfiguration$SpringAsyncExceptionHandler.class

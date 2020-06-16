@@ -1,0 +1,28 @@
+server:
+  port: 8016
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${zhcx.business.nacos.server-addr.${spring.profiles.active}}
+        namespace: ${zhcx.business.nacos.config.namespace.${spring.profiles.active}}
+      config:
+        server-addr: ${zhcx.business.nacos.server-addr.${spring.profiles.active}}
+        file-extension: yml
+        namespace: ${zhcx.business.nacos.config.namespace.${spring.profiles.active}}
+  application:
+    name: stone-gateway-zuul
+  profiles:
+    active: dev
+zhcx:
+  business:
+    nacos:
+      config:
+        namespace:
+          dev: f4ec8ee3-b06c-4b61-b7ea-ac9b00a5a0b2
+          test: 4081c90c-462a-4c9c-8442-804c712e4dff
+          aliyun-prod: 34a062b0-53f8-42b0-8761-8de0df2bdcdb
+      server-addr:
+        dev: 172.16.102.152:8848
+        test: 172.16.102.152:8848
+        aliyun-prod: 10.1.29.99:8848

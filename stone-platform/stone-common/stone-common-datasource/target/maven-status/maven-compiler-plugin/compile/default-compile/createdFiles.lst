@@ -1,0 +1,17 @@
+com\stone\common\datasource\mp\MyBatisPlusConfig$1.class
+com\stone\common\datasource\config\DynamicDataSourceConfig.class
+com\stone\common\datasource\mp\SqlInjectorExpander.class
+com\stone\common\datasource\mp\WrapperUtils.class
+com\stone\common\datasource\config\DynamicContextHolder.class
+com\stone\common\datasource\mp\BaseMapperExpander.class
+META-INF\spring-configuration-metadata.json
+com\stone\common\datasource\annotation\DataSource.class
+com\stone\common\datasource\DynamicDataSourceProperties.class
+com\stone\common\datasource\mp\ServiceExpanderImpl.class
+com\stone\common\datasource\aspect\DataSourceAspect.class
+com\stone\common\datasource\config\DynamicDataSourceFactory.class
+com\stone\common\datasource\mp\IServiceExpander.class
+com\stone\common\datasource\config\DynamicDataSource.class
+com\stone\common\datasource\DataSourceProperties.class
+com\stone\common\datasource\mp\MyBatisPlusConfig.class
+com\stone\common\datasource\mp\BaseEntity.class

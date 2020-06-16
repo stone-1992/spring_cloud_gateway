@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: stone-gateway-zuul
+  profiles:
+    active: dev
+    cloud:
+      nacos:
+        discovery:
+          server-addr: 172.16.102.152:8848
+          namespace: f4ec8ee3-b06c-4b61-b7ea-ac9b00a5a0b2
+server:
+  tomcat:
+    max-swallow-size: -1
+ribbon:
+  ConnectTimeout: 15000
+  ReadTimeout: 15000
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 15000
+zuul:
+  sensitive-headers: Access-Control-Allow-Origin,Access-Control-Allow-Methods,Access-Control-Allow-Credentials,Access-Control-Allow-Headers,Access-Control-Expose-Headers
+  ignored-headers: Access-Control-Allow-Origin
+  host:
+    connect-timeout-millis: 15000
+    socket-timeout-millis: 15000
+  routes:
+    service-one:
+      stripPrefix: false
+      path: /service-one/**
+      service-id: service-one
+    service-two:
+      stripPrefix: false
+      path: /service-two/**
+      service-id: service-two

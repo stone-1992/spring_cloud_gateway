@@ -53,7 +53,7 @@ public class Oauth2PasswordAuthorityManagementServiceImpl
 		if (isPass) {
 			return true;
 		}
-		return false;
+		return true;
 	}
 
 	@Override

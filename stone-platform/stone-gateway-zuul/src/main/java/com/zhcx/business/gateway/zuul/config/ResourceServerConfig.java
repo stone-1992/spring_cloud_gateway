@@ -1,7 +1,6 @@
 package com.zhcx.business.gateway.zuul.config;
 
 import com.zhcx.business.gateway.zuul.filter.CorsResponseFilter;
-import com.zhcx.business.gateway.zuul.oauth2.MyAccessDecisionManager;
 import com.zhcx.business.gateway.zuul.response.R;
 import com.zhcx.business.gateway.zuul.util.JacksonUtils;
 import com.zhcx.business.gateway.zuul.util.ResponseUtils;
@@ -10,8 +9,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.http.HttpStatus;
-import org.springframework.security.access.AccessDecisionManager;
-import org.springframework.security.config.annotation.ObjectPostProcessor;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
@@ -22,8 +19,6 @@ import org.springframework.security.oauth2.provider.token.DefaultAuthenticationK
 import org.springframework.security.oauth2.provider.token.TokenStore;
 import org.springframework.security.oauth2.provider.token.store.redis.RedisTokenStore;
 import org.springframework.security.web.access.channel.ChannelProcessingFilter;
-import org.springframework.security.web.access.intercept.FilterInvocationSecurityMetadataSource;
-import org.springframework.security.web.access.intercept.FilterSecurityInterceptor;
 import org.springframework.web.cors.CorsUtils;
 
 /**
@@ -83,10 +78,10 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 		return securityMetadataSource;
 	}*/
 
-	@Bean
+	/*@Bean
 	public AccessDecisionManager myAccessDecisionManager() {
 		return new MyAccessDecisionManager();
-	}
+	}*/
 
 	@Autowired
 	private RedisConnectionFactory redisConnectionFactory;

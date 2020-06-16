@@ -10,6 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
     <description>dubbo模块</description>
     <artifactId>stone-common-dubbo</artifactId>
+    <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
