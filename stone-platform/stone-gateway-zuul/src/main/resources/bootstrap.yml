@@ -19,10 +19,10 @@ zhcx:
     nacos:
       config:
         namespace:
-          dev: f4ec8ee3-b06c-4b61-b7ea-ac9b00a5a0b2
-          test: 4081c90c-462a-4c9c-8442-804c712e4dff
-          aliyun-prod: 34a062b0-53f8-42b0-8761-8de0df2bdcdb
+          dev: b03acc92-d77d-4ca6-aa8c-99291a520839
+          test: b03acc92-d77d-4ca6-aa8c-99291a520839
+          aliyun-prod: b03acc92-d77d-4ca6-aa8c-99291a520839
       server-addr:
-        dev: 172.16.102.152:8848
-        test: 172.16.102.152:8848
-        aliyun-prod: 10.1.29.99:8848
+        dev: localhost:8848
+        test: localhost:8848
+        aliyun-prod: localhost:8848

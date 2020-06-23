@@ -4,9 +4,9 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
     druid:
-      url: jdbc:mysql://172.16.102.107:3388/zhcx_business_platform_basedata?zeroDateTimeBehavior=convertToNull&useUnicode=true&useSSL=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
-      username: test
-      password: test123
+      url: jdbc:mysql://192.168.180.140:3306/stone_business?zeroDateTimeBehavior=convertToNull&useUnicode=true&useSSL=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+      username: root
+      password: Oracle@2018
       filter:
         wall:
           config:

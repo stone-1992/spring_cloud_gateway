@@ -4,19 +4,22 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
     druid:
-      url: jdbc:mysql://172.16.102.107:3388/zhcx_business_platform_basedata?zeroDateTimeBehavior=convertToNull&useUnicode=true&useSSL=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
-      username: test
-      password: test123
+      url: jdbc:mysql://192.168.180.140:3306/stone_business?zeroDateTimeBehavior=convertToNull&useUnicode=true&useSSL=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+      username: root
+      password: Oracle@2018
       filter:
         wall:
           config:
             multi-statement-allow: true
   redis:
-    sentinel:
-      master: mymaster
-      nodes: 172.16.102.104:26379,172.16.102.104:26378,172.16.102.104:26377
+#    sentinel:
+#      master: mymaster
+#      nodes: 192.168.180.140:6379
     port: 6379
     database: 4
+    host: 192.168.180.140
+    password: 123456
+
   kafka:
     bootstrap-servers: 172.16.102.104:9092,172.16.102.104:9093,172.16.102.104:9094
     consumer:
@@ -29,7 +32,7 @@ spring:
       missing-topics-fatal: false
 dubbo:
   registry:
-    address: zookeeper://172.16.102.11:2181?backup=172.16.102.12:2181,172.16.102.13:2181
+    address: zookeeper://192.168.180.140:2181
     file: /stone-service-one/dubbo-registry/dubbo.cache
   application:
     name: stone-service-one

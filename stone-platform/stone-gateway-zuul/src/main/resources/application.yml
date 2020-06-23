@@ -6,8 +6,8 @@ spring:
     cloud:
       nacos:
         discovery:
-          server-addr: 172.16.102.152:8848
-          namespace: f4ec8ee3-b06c-4b61-b7ea-ac9b00a5a0b2
+          server-addr: localhost:8848
+          namespace: b03acc92-d77d-4ca6-aa8c-99291a520839
 server:
   tomcat:
     max-swallow-size: -1
