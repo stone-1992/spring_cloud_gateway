@@ -18,6 +18,7 @@
         <module>stone-service-two</module>
         <module>stone-auth</module>
         <module>stone-gateway-zuul</module>
+        <module>stone-service-three</module>
     </modules>
 
     <properties>

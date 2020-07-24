@@ -5,5 +5,5 @@ spring:
 #      nodes: 172.16.102.104:26379,172.16.102.104:26378,172.16.102.104:26377
     port: 6379
     database: 4
-    host: 192.168.180.140
-    password: 123456
+    host: localhost
+    #password: 123456

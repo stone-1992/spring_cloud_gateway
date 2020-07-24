@@ -1,0 +1,10 @@
+
+server:
+  port: 8003
+  servlet:
+    context-path: /service-three
+spring:
+  application:
+    name: service-three
+  profiles:
+    active: dev
