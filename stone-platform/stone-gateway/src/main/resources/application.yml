@@ -17,6 +17,11 @@ spring:
         predicates:
           - Path=/service-two/**
           - After= 2020-07-19T20:02:38.441+08:00[GMT+08:00]
+      - id: service-three
+        uri: lb://service-three
+        order: 8002
+        predicates:
+          - Path=/service-three/**
 logging:
   level:
     org.springframework.cloud.gateway: TRACE

@@ -27,18 +27,11 @@
             <version>1.0.0-SNAPSHOT</version>
         </dependency>
         <!-- 数据库 -->
-        <!--<dependency>
+        <dependency>
             <groupId>com.stone</groupId>
             <artifactId>stone-common-datasource</artifactId>
             <version>1.0.0-SNAPSHOT</version>
-        </dependency>-->
-
-        <!-- redis -->
-        <!--<dependency>
-            <groupId>com.stone</groupId>
-            <artifactId>stone-common-redis</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-        </dependency>-->
+        </dependency>
         <!-- 阿里nacos注册中心 -->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
