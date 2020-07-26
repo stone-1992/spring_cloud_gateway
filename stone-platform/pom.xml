@@ -23,7 +23,7 @@
 
     <properties>
         <!-- Project revision -->
-        <revision>1.1.0-SNAPSHOT</revision>
+        <revision>1.0.0-SNAPSHOT</revision>
         <!--指定项目打包UTF-8编码 -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!--指定maven编译jdk版本 -->
@@ -173,7 +173,6 @@
             </dependency>
 
             <!--以下自封装模块 -->
-
         </dependencies>
     </dependencyManagement>
 

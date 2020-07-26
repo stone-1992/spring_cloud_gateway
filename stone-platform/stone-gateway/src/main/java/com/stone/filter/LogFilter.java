@@ -22,8 +22,9 @@ public class LogFilter implements GlobalFilter, Ordered {
         ServerHttpRequest request = exchange.getRequest();
         HttpMethod method = request.getMethod();
         URI uri = request.getURI();
-        log.info("url : " + uri + "; method : " + method);
-        if(uri.toString().contains("/getone/test")){
+        log.info("url : " + uri + "; method : " + method + " : " + uri.getPath());
+
+        if(uri.toString().contains("/service-two/person/test")){
             exchange.getResponse().setStatusCode(HttpStatus.NOT_ACCEPTABLE);
             return exchange.getResponse().setComplete();
         }

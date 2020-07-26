@@ -21,6 +21,7 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-gateway</artifactId>
         </dependency>
+
         <!-- 阿里nacos注册中心 -->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
@@ -41,8 +42,7 @@
             <artifactId>spring-cloud-starter-oauth2</artifactId>
         </dependency>-->
 
-
-        <!--缓存依赖-->
+        <!--缓存依赖 redis -->
         <!--<dependency>
             <groupId>com.stone</groupId>
             <artifactId>stone-common-redis</artifactId>
