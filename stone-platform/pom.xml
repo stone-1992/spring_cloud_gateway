@@ -42,7 +42,7 @@
         <!--
         本地 mysql 连接，版本冲突
         <mysql.connector.version>8.0.18</mysql.connector.version>-->
-        <mysql.connector.version>5.1.6</mysql.connector.version>
+        <mysql.connector.version>8.0.16</mysql.connector.version>
         <swagger.core.version>1.5.22</swagger.core.version>
         <swagger.fox.version>2.9.2</swagger.fox.version>
         <knife4j.version>2.0.2</knife4j.version>
