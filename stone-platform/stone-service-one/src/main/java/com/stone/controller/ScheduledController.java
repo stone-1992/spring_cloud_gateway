@@ -1,4 +1,4 @@
-package com.stone.java8;
+package com.stone.controller;
 
 import io.swagger.annotations.Api;
 import org.springframework.scheduling.annotation.Scheduled;

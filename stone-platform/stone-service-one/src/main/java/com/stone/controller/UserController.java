@@ -1,10 +1,9 @@
-package com.stone.java8;
+package com.stone.controller;
 
 
 import com.stone.core.util.R;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import model.exption.BusinessException;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -29,7 +28,6 @@ public class UserController {
         int randomInt = random.nextInt();
         System.err.println(" randomInt == 1 : " + (randomInt == 1));
         if (randomInt != 1) {
-            throw new BusinessException("测试抛出异常");
         }
         return R.ok("测试通过");
     }

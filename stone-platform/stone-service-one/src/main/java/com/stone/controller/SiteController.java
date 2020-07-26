@@ -1,4 +1,4 @@
-package com.stone.java8;
+package com.stone.controller;
 
 
 import com.alibaba.dubbo.config.annotation.Reference;
