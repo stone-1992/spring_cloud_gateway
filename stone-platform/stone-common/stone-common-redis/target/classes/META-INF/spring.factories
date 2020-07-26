@@ -1,4 +1,0 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.stone.redis.config.RedisAutoConfigure,\
-com.stone.redis.sequence.SequenceAutoConfigure,\
-com.stone.redis.lock.DistributedLockAutoConfigure

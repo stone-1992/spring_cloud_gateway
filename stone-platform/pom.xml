@@ -16,11 +16,14 @@
         <module>stone-service-one</module>
         <module>stone-eureka-server</module>
         <module>stone-service-two</module>
+        <module>stone-auth</module>
+        <module>stone-gateway-zuul</module>
+        <module>stone-service-three</module>
     </modules>
 
     <properties>
         <!-- Project revision -->
-        <revision>1.1.0-SNAPSHOT</revision>
+        <revision>1.0.0-SNAPSHOT</revision>
         <!--指定项目打包UTF-8编码 -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!--指定maven编译jdk版本 -->
@@ -36,7 +39,10 @@
         <!--依赖版本 -->
         <mybatis-plus.version>3.3.1.tmp</mybatis-plus.version>
         <druid.version>1.1.22</druid.version>
-        <mysql.connector.version>8.0.18</mysql.connector.version>
+        <!--
+        本地 mysql 连接，版本冲突
+        <mysql.connector.version>8.0.18</mysql.connector.version>-->
+        <mysql.connector.version>5.1.6</mysql.connector.version>
         <swagger.core.version>1.5.22</swagger.core.version>
         <swagger.fox.version>2.9.2</swagger.fox.version>
         <knife4j.version>2.0.2</knife4j.version>
@@ -167,7 +173,6 @@
             </dependency>
 
             <!--以下自封装模块 -->
-
         </dependencies>
     </dependencyManagement>
 

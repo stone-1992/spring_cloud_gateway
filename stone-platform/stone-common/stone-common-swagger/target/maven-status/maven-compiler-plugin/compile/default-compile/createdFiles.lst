@@ -1,5 +1,0 @@
-swagger\annotation\EnableZhcxSwagger2.class
-swagger\config\SwaggerAutoConfiguration.class
-swagger\config\SwaggerProperties$Authorization.class
-swagger\config\SwaggerProperties.class
-META-INF\spring-configuration-metadata.json

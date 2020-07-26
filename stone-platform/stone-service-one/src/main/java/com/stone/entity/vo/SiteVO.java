@@ -26,6 +26,9 @@ public class SiteVO implements Serializable {
     @ApiModelProperty("场站Id")
     private Long id;
 
+    @ApiModelProperty("企业id")
+    private Long corpId;
+
     @ApiModelProperty("站点编号")
     private String siteCode;
 
@@ -34,9 +37,12 @@ public class SiteVO implements Serializable {
     @Length(max = 30, message = "站点名称不能超过30个字符", groups = {AddGroup.class})
     private String siteName;
 
-    @ApiModelProperty("金钱")
-    @NotNull(message = "金钱不能为空", groups = {AddGroup.class})
-    @BigDecimalCheck(minValue = -180.00f, maxValue = 180.00f, fraction = 7, message = "金钱范围-180~180,最多7位小数", groups = {AddGroup.class})
-    private BigDecimal money;
+    @ApiModelProperty("站点金钱")
+    @NotNull(message = "站点金钱不能为空", groups = {AddGroup.class})
+    @BigDecimalCheck(minValue = -180.00f, maxValue = 180.00f, fraction = 7, message = "站点金钱范围-180~180,最多7位小数", groups = {AddGroup.class})
+    private BigDecimal siteMoney;
+
+    @ApiModelProperty("备注")
+    private String remark;
 
 }

@@ -1,0 +1,20 @@
+spring:
+  redis:
+    port: 6379
+#    sentinel:
+#      nodes: 172.16.102.104:26379,172.16.102.104:26378,172.16.102.104:26377
+#      master: mymaster
+    database: 4
+    jedis:
+      pool:
+        max-active: 20
+        max-wait:
+          2000
+        max-idle: 100
+        min-idle: 10
+    host: 192.168.180.140
+    password: 123456
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8801

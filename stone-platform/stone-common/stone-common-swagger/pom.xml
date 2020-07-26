@@ -10,6 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
     <description>swagger接口文档</description>
     <artifactId>stone-common-swagger</artifactId>
+    <packaging>jar</packaging>
 
     <dependencies>
         <!--swagger 依赖-->

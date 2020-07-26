@@ -16,21 +16,18 @@ spring:
         order: 8001
         predicates:
           - Path=/service-two/**
+          - After= 2020-07-19T20:02:38.441+08:00[GMT+08:00]
+      - id: service-three
+        uri: lb://service-three
+        order: 8002
+        predicates:
+          - Path=/service-three/**
 logging:
   level:
     org.springframework.cloud.gateway: TRACE
     org.springframework.http.server.reactive: DEBUG
     org.springframework.web.reactive: DEBUG
     reactor.ipc.netty: DEBUG
-
-# eureka 注册中心
-#eureka:
-#  client:
-#    service-url:
-#      defaultZone: http://localhost:8761/eureka/
-#  instance:
-#    prefer-ip-address: true
-
 
 # 集成Oauth2
 #security:

@@ -37,18 +37,38 @@ public class SiteController {
     @ApiOperation(value = "查询数据库测试信息")
     @GetMapping("list")
     public R<List<Site>> getList() {
-        List<Site> sites = siteService.queryList();
+        SiteVO siteVO = new SiteVO();
+        List<Site> sites = siteService.queryList(siteVO);
         return R.ok(sites);
     }
 
-    @ApiOperation(value = "前端新增，参数校验")
+    @ApiOperation(value = "新增站点")
     @PostMapping("add")
     public R add(@RequestBody SiteVO siteVO) {
         // 校验参数
         ValidatorUtils.validateEntity(siteVO, AddGroup.class);
 
         // 业务逻辑处理
+        siteService.addSite(siteVO);
+        return R.ok();
+    }
 
+    @ApiOperation(value = "编辑站点")
+    @PutMapping("update")
+    public R update(@RequestBody SiteVO siteVO) {
+        // 校验参数
+        ValidatorUtils.validateEntity(siteVO, AddGroup.class);
+
+        // 业务逻辑处理
+        siteService.editSite(siteVO);
+        return R.ok();
+    }
+
+    @ApiOperation(value = "删除站点")
+    @DeleteMapping("delete")
+    public R delete(@RequestParam(value = "siteId", required = true) Long siteId) {
+        // 业务逻辑处理
+        siteService.deleteSite(siteId);
         return R.ok();
     }
 
@@ -91,7 +111,7 @@ public class SiteController {
         siteVO.setId(100L);
         siteVO.setSiteCode("CZ100");
         siteVO.setSiteName("河西王府井");
-        siteVO.setMoney(new BigDecimal(100));
+        siteVO.setSiteMoney(new BigDecimal(100));
 
         // 发送kafka记录
         kafkaProducer.send("kafka.test.log", siteVO);
