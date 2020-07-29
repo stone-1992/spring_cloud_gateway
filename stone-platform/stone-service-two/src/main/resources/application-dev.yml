@@ -40,16 +40,3 @@ logging:
 swagger:
   title: 接口文档
   enabled: true
-##多数据源的配置
-#dynamic:
-#  datasource:
-#    slave1:
-#      driver-class-name: com.mysql.cj.jdbc.Driver
-#      url: jdbc:mysql://172.16.102.107:3388/qr_cxpay?zeroDateTimeBehavior=convertToNull&useUnicode=true&useSSL=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
-#      username: test
-#      password: test123
-#    slave2:
-#      driver-class-name: com.mysql.cj.jdbc.Driver
-#      url: jdbc:mysql://172.16.102.107:3388/wisdombus2.0_bus_time?zeroDateTimeBehavior=convertToNull&useUnicode=true&useSSL=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
-#      username: test
-#      password: test123
