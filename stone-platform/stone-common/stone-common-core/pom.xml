@@ -43,11 +43,6 @@
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
         </dependency>
-        <!--server-api-->
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-        </dependency>
         <!--mybatis-plus 注解包依赖-->
         <dependency>
             <groupId>com.baomidou</groupId>

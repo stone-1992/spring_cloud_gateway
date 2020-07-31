@@ -1,4 +1,4 @@
-//package com.stone.auth;
+//package com.stone.config;
 //
 //import lombok.extern.slf4j.Slf4j;
 //import org.springframework.security.authentication.ReactiveAuthenticationManager;
@@ -19,6 +19,7 @@
 //        this.tokenStore = tokenStore;
 //    }
 //
+//
 //    @Override
 //    public Mono<Authentication> authenticate(Authentication authentication) {
 //        return Mono.justOrEmpty(authentication)
@@ -26,7 +27,7 @@
 //                .cast(BearerTokenAuthenticationToken.class)
 //                .map(BearerTokenAuthenticationToken::getToken)
 //                .flatMap((accessToken -> {
-//                    // log.info("accessToken is :{}",accessToken);
+//                    log.info("accessToken is :{}", accessToken);
 //                    OAuth2AccessToken oAuth2AccessToken = this.tokenStore.readAccessToken(accessToken);
 //                    //根据access_token从数据库获取不到OAuth2AccessToken
 //                    if (oAuth2AccessToken == null) {

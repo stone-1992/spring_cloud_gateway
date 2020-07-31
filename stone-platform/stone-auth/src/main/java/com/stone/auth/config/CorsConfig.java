@@ -10,7 +10,6 @@ import org.springframework.web.filter.CorsFilter;
 /**
  * @classname CorsConfig
  * @description
- * @date 2020/3/19 9:12
  */
 @Configuration
 public class CorsConfig {

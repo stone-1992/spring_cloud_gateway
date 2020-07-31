@@ -1,14 +1,10 @@
 server:
-  port: 80
+  port: 8000
 spring:
   cloud:
     nacos:
       discovery:
         server-addr: ${nacos.server-addr.${spring.profiles.active}}
-        namespace: ${nacos.config.namespace.${spring.profiles.active}}
-      config:
-        server-addr: ${nacos.server-addr.${spring.profiles.active}}
-        file-extension: yml
         namespace: ${nacos.config.namespace.${spring.profiles.active}}
   application:
     name: gateway

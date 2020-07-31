@@ -1,5 +1,6 @@
 package com.stone.controller;
 
+import com.stone.core.util.R;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,8 +14,8 @@ public class PersonController {
     private String serverPort;
 
     @GetMapping(value = "getOne")
-    public String getTest(){
-        return "this is person :　" + serverPort;
+    public R getTest() {
+        return R.ok("this is person :　" + serverPort);
     }
 
 }

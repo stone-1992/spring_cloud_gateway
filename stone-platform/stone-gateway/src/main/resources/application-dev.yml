@@ -5,3 +5,7 @@ spring:
     host: localhost
   main:
     allow-bean-definition-overriding: true
+  security:
+    user:
+      name: admin
+      password: admin

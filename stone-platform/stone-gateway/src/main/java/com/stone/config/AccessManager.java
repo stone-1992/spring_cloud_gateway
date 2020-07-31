@@ -14,10 +14,9 @@
 //
 //import java.util.Set;
 //
-//@Component
 //@Slf4j
+//@Component
 //public class AccessManager implements ReactiveAuthorizationManager<AuthorizationContext> {
-//
 //    private Set<String> permitAll = new ConcurrentHashSet<>();
 //    private static final AntPathMatcher antPathMatcher = new AntPathMatcher();
 //
