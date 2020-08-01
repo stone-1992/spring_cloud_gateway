@@ -5,7 +5,7 @@
     <parent>
         <artifactId>stone-platform</artifactId>
         <groupId>com.stone</groupId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>${project.revision}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>stone-service-two</artifactId>
@@ -24,13 +24,11 @@
         <dependency>
             <groupId>com.stone</groupId>
             <artifactId>stone-common-swagger</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
         </dependency>
         <!-- 数据库 -->
         <dependency>
             <groupId>com.stone</groupId>
             <artifactId>stone-common-datasource</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
         </dependency>
         <!-- 阿里nacos注册中心 -->
         <dependency>

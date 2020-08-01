@@ -5,7 +5,7 @@
     <parent>
         <artifactId>stone-platform</artifactId>
         <groupId>com.stone</groupId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>${project.revision}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -26,7 +26,6 @@
         <dependency>
             <groupId>com.stone</groupId>
             <artifactId>stone-common-redis</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
         </dependency>
         <!--服务发现-->
         <dependency>
@@ -64,5 +63,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

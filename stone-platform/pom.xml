@@ -3,11 +3,11 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>com.stone</groupId>
     <artifactId>stone-platform</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>${project.revision}</version>
+    <description>stone平台</description>
 
     <!-- 子模块 -->
     <modules>
@@ -23,7 +23,7 @@
 
     <properties>
         <!-- Project revision -->
-        <revision>1.0.0-SNAPSHOT</revision>
+        <project.revision>1.1.0-SNAPSHOT</project.revision>
         <!--指定项目打包UTF-8编码 -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!--指定maven编译jdk版本 -->
@@ -141,7 +141,6 @@
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql.connector.version}</version>
             </dependency>
-
             <!--http客户端 -->
             <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
@@ -154,6 +153,7 @@
                 <artifactId>hutool-all</artifactId>
                 <version>${hutool.version}</version>
             </dependency>
+            <!--dubbo -->
             <dependency>
                 <groupId>com.alibaba.boot</groupId>
                 <artifactId>dubbo-spring-boot-starter</artifactId>
@@ -173,6 +173,66 @@
             </dependency>
 
             <!--以下自封装模块 -->
+            <!-- async 异步支持-->
+            <dependency>
+                <groupId>com.stone</groupId>
+                <artifactId>stone-common-async</artifactId>
+                <version>${project.revision}</version>
+            </dependency>
+            <!-- auth-->
+            <dependency>
+                <groupId>com.stone</groupId>
+                <artifactId>stone-auth</artifactId>
+                <version>${project.revision}</version>
+            </dependency>
+            <!-- 核心 core-->
+            <dependency>
+                <groupId>com.stone</groupId>
+                <artifactId>stone-common-core</artifactId>
+                <version>${project.revision}</version>
+            </dependency>
+            <!-- datasource-->
+            <dependency>
+                <groupId>com.stone</groupId>
+                <artifactId>stone-common-datasource</artifactId>
+                <version>${project.revision}</version>
+            </dependency>
+            <!-- dubbo -->
+            <dependency>
+                <groupId>com.stone</groupId>
+                <artifactId>stone-common-dubbo</artifactId>
+                <version>${project.revision}</version>
+            </dependency>
+            <!-- kafka -->
+            <dependency>
+                <groupId>com.stone</groupId>
+                <artifactId>stone-common-kafka</artifactId>
+                <version>${project.revision}</version>
+            </dependency>
+            <!-- model 实体类-->
+            <dependency>
+                <groupId>com.stone</groupId>
+                <artifactId>stone-common-model</artifactId>
+                <version>${project.revision}</version>
+            </dependency>
+            <!-- Excel poi 导入导出-->
+            <dependency>
+                <groupId>com.stone</groupId>
+                <artifactId>stone-common-poi</artifactId>
+                <version>${project.revision}</version>
+            </dependency>
+            <!-- redis -->
+            <dependency>
+                <groupId>com.stone</groupId>
+                <artifactId>stone-common-redis</artifactId>
+                <version>${project.revision}</version>
+            </dependency>
+            <!-- swagger -->
+            <dependency>
+                <groupId>com.stone</groupId>
+                <artifactId>stone-common-swagger</artifactId>
+                <version>${project.revision}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -202,7 +262,7 @@
     </dependencies>
 
     <build>
-        <finalName>${project.name}-${revision}</finalName>
+        <finalName>${project.name}-${project.revision}</finalName>
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
