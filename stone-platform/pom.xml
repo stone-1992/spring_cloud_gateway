@@ -19,6 +19,7 @@
         <module>stone-auth</module>
         <module>stone-gateway-zuul</module>
         <module>stone-service-three</module>
+        <module>stone-user-center</module>
     </modules>
 
     <properties>

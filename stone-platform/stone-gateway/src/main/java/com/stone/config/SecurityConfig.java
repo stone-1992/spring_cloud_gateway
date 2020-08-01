@@ -36,27 +36,35 @@ import javax.annotation.Resource;
 @SuppressWarnings("all")
 @EnableConfigurationProperties(PermitUrlProperties.class)
 public class SecurityConfig {
+    /**
+     * 网关放行 url properties
+     */
     @Autowired
     private PermitUrlProperties permitUrlProperties;
 
+    /**
+     * 存放 token 的方式
+     */
     @Autowired
     private TokenStore tokenStore;
-
-    @Resource
-    private AuthorizeConfigManager authorizeConfigManager;
 
     @Autowired
     private RedisConnectionFactory redisConnectionFactory;
 
+    @Resource
+    private AuthorizeConfigManager authorizeConfigManager;
 
+    /**
+     * 采用 redis 存储 token
+     * @param connectionFactory
+     * @return
+     */
     @Bean
     public RedisTokenStore tokenStore(RedisConnectionFactory connectionFactory) {
         Assert.state(connectionFactory != null, "connectionFactory must be provided");
         RedisTokenStore tokenStore = new RedisTokenStore(connectionFactory);
         tokenStore.setPrefix("bp:");
         return tokenStore;
-
-
     }
 
     @Bean
@@ -64,9 +72,7 @@ public class SecurityConfig {
         //认证处理器
         ReactiveAuthenticationManager tokenAuthenticationManager = new TokenAuthenticationManager(tokenStore);
         ResAuthenticationEntryPoint resAuthenticationEntryPoint = new ResAuthenticationEntryPoint();
-
         ResAccessDeniedHandler resAccessDeniedHandler = new ResAccessDeniedHandler();
-
         //构建Bearer Token
         //请求参数强制加上 Authorization BEARER token
         http.addFilterAt((WebFilter) (exchange, chain) -> {
@@ -90,12 +96,9 @@ public class SecurityConfig {
         tokenAuthenticationConverter.setAllowUriQueryParameter(true);
         authenticationWebFilter.setServerAuthenticationConverter(tokenAuthenticationConverter);
 
-
         http.addFilterAt(authenticationWebFilter, SecurityWebFiltersOrder.AUTHENTICATION);
-
-//        AuthorizationWebFilter authorizationWebFilter=new AuthorizationWebFilter(delegatingAuthorizationManager); //访问授权
-//        http.addFilterAt(authorizationWebFilter, SecurityWebFiltersOrder.FORM_LOGIN);
-
+        // AuthorizationWebFilter authorizationWebFilter = new AuthorizationWebFilter(delegatingAuthorizationManager); //访问授权
+        // http.addFilterAt(authorizationWebFilter, SecurityWebFiltersOrder.FORM_LOGIN);
         ServerHttpSecurity.AuthorizeExchangeSpec authorizeExchange = http.authorizeExchange();
 
         authorizeExchange.matchers(EndpointRequest.toAnyEndpoint()).permitAll(); //无需进行权限过滤的请求路径
