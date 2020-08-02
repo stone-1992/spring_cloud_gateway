@@ -234,6 +234,12 @@
                 <artifactId>stone-common-swagger</artifactId>
                 <version>${project.revision}</version>
             </dependency>
+            <!-- usercenter -->
+            <dependency>
+                <groupId>com.stone</groupId>
+                <artifactId>stone-user-center-api</artifactId>
+                <version>${project.revision}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 

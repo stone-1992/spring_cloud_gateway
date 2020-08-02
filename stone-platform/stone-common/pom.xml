@@ -22,6 +22,4 @@
         <module>stone-common-async</module>
         <module>stone-common-poi</module>
     </modules>
-
-
 </project>

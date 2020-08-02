@@ -46,5 +46,10 @@
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>com.stone</groupId>
+            <artifactId>stone-user-center-api</artifactId>
+        </dependency>
     </dependencies>
 </project>

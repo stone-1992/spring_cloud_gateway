@@ -1,6 +1,10 @@
 package com.stone.auth.support.webapp;
 
+import cn.hutool.core.bean.BeanUtil;
+import cn.hutool.core.convert.Convert;
+import cn.hutool.core.util.StrUtil;
 import com.stone.auth.model.LoginUser;
+import com.stone.vo.UserAuth;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -38,20 +42,20 @@ public class WebAppAuthenticationProvider implements AuthenticationProvider {
             throw new InternalAuthenticationServiceException("账号密码不能为空");
         }
         // 解密前端密码
-        /*try {
-            password = URLEncoder.createDefault().encode(password, CharsetUtil.CHARSET_UTF_8);
-            password = new String(SecureUtil.rsa(SecurityConstants.RSA_PRIVATE_KEY,SecurityConstants.RSA_PUBLIC_KEY).decrypt(Base64.decode(password), KeyType.PrivateKey));
-        } catch (Exception e) {
-            throw new InternalAuthenticationServiceException("密码加密方式错误");
-        }*/
         UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(username, password, null);
         LoginUser loginUser = (LoginUser) userDetailsServiceImpl.loadUserByUsername(username);
-        if(!"admin".equals(username)){
+        if(Objects.isNull(loginUser)){
+            throw new InternalAuthenticationServiceException("账号或者密码错误");
+        }
+        UserAuth userAuth = BeanUtil.toBean(loginUser, UserAuth.class);
+
+        // 校验密码
+        if(!StrUtil.equals(password, userAuth.getAccountPwd())){
             throw new InternalAuthenticationServiceException("账号或者密码错误");
         }
         UserInfo userInfo = new UserInfo();
-        userInfo.setUserName(username);
-        userInfo.setPassword(password);
+        userInfo.setUserName(userAuth.getAccountNo());
+        userInfo.setPassword(userAuth.getAccountPwd());
         authenticationToken.setDetails(userInfo);
         return authenticationToken;
     }

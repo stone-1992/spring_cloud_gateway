@@ -3,29 +3,25 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>stone-platform</artifactId>
+        <artifactId>stone-user-center</artifactId>
         <groupId>com.stone</groupId>
-        <version>${project.revision}</version>
+        <version>${project.version}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
-    <artifactId>stone-auth</artifactId>
+    <artifactId>stone-user-center-biz</artifactId>
+    <packaging>jar</packaging>
 
     <dependencies>
-        <!--安全模块 -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-oauth2</artifactId>
-        </dependency>
-        <!--web-->
+        <!--测试依赖 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
-        <!--缓存依赖-->
+        <!--配置中心-->
         <dependency>
-            <groupId>com.stone</groupId>
-            <artifactId>stone-common-redis</artifactId>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
         </dependency>
         <!--服务发现-->
         <dependency>
@@ -34,31 +30,41 @@
             <optional>true</optional>
         </dependency>
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <!-- 验证码生成工具 -->
-        <dependency>
-            <groupId>com.github.whvcse</groupId>
-            <artifactId>easy-captcha</artifactId>
-        </dependency>
-        <!-- hutool 工具包-->
-        <dependency>
-            <groupId>cn.hutool</groupId>
-            <artifactId>hutool-all</artifactId>
-        </dependency>
-        <!-- 用户中心接口-->
+        <!-- core 核心库-->
         <dependency>
             <groupId>com.stone</groupId>
-            <artifactId>stone-user-center-api</artifactId>
+            <artifactId>stone-common-core</artifactId>
+        </dependency>
+        <!-- datasource 数据库-->
+        <dependency>
+            <groupId>com.stone</groupId>
+            <artifactId>stone-common-datasource</artifactId>
         </dependency>
         <!-- dubbo -->
         <dependency>
             <groupId>com.stone</groupId>
             <artifactId>stone-common-dubbo</artifactId>
         </dependency>
-    </dependencies>
+        <!-- redis -->
+        <dependency>
+            <groupId>com.stone</groupId>
+            <artifactId>stone-common-redis</artifactId>
+        </dependency>
+        <!-- swagger -->
+        <dependency>
+            <groupId>com.stone</groupId>
+            <artifactId>stone-common-swagger</artifactId>
+        </dependency>
 
+        <!-- 用户中心接口-->
+        <dependency>
+            <groupId>com.stone</groupId>
+            <artifactId>stone-user-center-api</artifactId>
+        </dependency>
+    </dependencies>
     <build>
         <plugins>
             <plugin>
