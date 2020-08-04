@@ -1,0 +1,31 @@
+spring:
+  redis:
+#    sentinel:
+#      master: mymaster
+#      nodes: 172.16.102.104:26379,172.16.102.104:26378,172.16.102.104:26377
+    port: 6379
+    database: 4
+    host: 192.168.137.66
+    password: 123456
+dubbo:
+  registry:
+    address: zookeeper://192.168.137.66:2181
+  application:
+    name: @artifactId@
+    qos-enable: false
+  protocol:
+    port: 30011
+    name: dubbo
+  consumer:
+    check: false
+    timeout: 3000
+    version: 1.0.0
+  provider:
+    timeout: 3000
+    version: 1.0.0
+logging:
+  level:
+    com.zhcx.business.basedata.infrastructure.mapper: debug
+swagger:
+  title: 接口文档
+  enabled: true

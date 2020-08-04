@@ -15,7 +15,7 @@ spring:
   application:
     name: service-three
   profiles:
-    active: dev
+    active: test
 nacos:
   config:
     namespace:

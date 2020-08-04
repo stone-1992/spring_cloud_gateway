@@ -2,7 +2,7 @@ spring:
   application:
     name: service-one
   profiles:
-    active: dev
+    active: test
   cloud:
     nacos:
       discovery:

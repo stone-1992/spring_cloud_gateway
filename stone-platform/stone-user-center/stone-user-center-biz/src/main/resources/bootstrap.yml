@@ -15,10 +15,12 @@ spring:
         file-extension: yml                                               # 指定 yml 的配置
         namespace: ${nacos.config.namespace.${spring.profiles.active}}
   profiles:
-    active: dev
+    active: test
 nacos:
   config:
     namespace:
       dev: b03acc92-d77d-4ca6-aa8c-99291a520839
+      test: b03acc92-d77d-4ca6-aa8c-99291a520839
   server-addr:
     dev: localhost:8848
+    test: localhost:8848

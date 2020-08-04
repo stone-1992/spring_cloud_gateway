@@ -13,7 +13,7 @@ spring:
         file-extension: yml
         namespace: ${zhcx.business.nacos.config.namespace.${spring.profiles.active}}
   profiles:
-    active: dev
+    active: test
 #        shared-configs:
 #          - data-id: @artifactId@-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
 #            refresh: true
