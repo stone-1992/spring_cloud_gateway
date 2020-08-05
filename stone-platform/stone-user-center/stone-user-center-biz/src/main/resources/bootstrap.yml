@@ -15,7 +15,7 @@ spring:
         file-extension: yml                                               # 指定 yml 的配置
         namespace: ${nacos.config.namespace.${spring.profiles.active}}
   profiles:
-    active: test
+    active: dev
 nacos:
   config:
     namespace:

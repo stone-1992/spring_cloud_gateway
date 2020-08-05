@@ -21,7 +21,7 @@ spring:
         # 默认 8791 端口，加入被占用会自动从8719开始依次+1扫描，直至找到未被占用的端口
         port: 8719
   profiles:
-    active: test
+    active: dev
 nacos:
   config:
     namespace:
