@@ -10,7 +10,6 @@ spring:
 dubbo:
   registry:
     address: zookeeper://192.168.180.1:2181
-    file: /@artifactId@/dubbo-registry/dubbo.cache
   application:
     name: @artifactId@
     qos-enable: false

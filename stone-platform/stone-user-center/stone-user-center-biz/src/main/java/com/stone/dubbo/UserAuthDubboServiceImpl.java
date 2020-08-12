@@ -3,7 +3,6 @@ package com.stone.dubbo;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.stone.service.UserAuthService;
 import com.stone.vo.UserAuth;
-
 import javax.annotation.Resource;
 
 /**
