@@ -46,4 +46,12 @@ public class UserController {
         return R.ok(userAuthService.selectUserAuthList(userAuth));
     }
 
+
+    @PostMapping("test")
+    @ApiOperation("test")
+    public R test(@RequestBody UserAuth userAuth){
+        System.err.println(userAuth);
+        return R.ok();
+    }
+
 }

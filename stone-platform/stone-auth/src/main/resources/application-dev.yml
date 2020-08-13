@@ -9,7 +9,7 @@ spring:
     #password: 123456
 dubbo:
   registry:
-    address: zookeeper://192.168.180.1:2181
+    address: zookeeper://192.168.137.9:2181
   application:
     name: @artifactId@
     qos-enable: false

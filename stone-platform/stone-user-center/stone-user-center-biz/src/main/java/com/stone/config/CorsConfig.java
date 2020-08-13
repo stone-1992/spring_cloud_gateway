@@ -1,4 +1,4 @@
-package com.stone.auth.config;
+package com.stone.config;
 
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
@@ -40,7 +40,7 @@ public class CorsConfig {
         source.registerCorsConfiguration("/**", buildConfig());
         FilterRegistrationBean<CorsFilter> bean = new FilterRegistrationBean<CorsFilter>(new CorsFilter(source));
         // 这个顺序很重要，为避免麻烦设置在最前
-        bean.setOrder(-104);
+        bean.setOrder(0);
         return bean;
     }
 }
