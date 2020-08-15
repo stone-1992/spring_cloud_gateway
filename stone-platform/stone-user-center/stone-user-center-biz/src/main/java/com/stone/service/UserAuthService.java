@@ -1,5 +1,6 @@
 package com.stone.service;
 
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.stone.common.datasource.mp.IServiceExpander;
 import com.stone.vo.UserAuth;
 
@@ -41,6 +42,22 @@ public interface UserAuthService extends IServiceExpander<UserAuth> {
      * @return
      */
     public UserAuth selectByAccountNo(String accountNo);
+
+    /**
+     * 分页查询用户信息
+     * @param keyword
+     * @param pageNo
+     * @param pageSize
+     * @return
+     */
+    public Page<UserAuth> selectUserAuthPage(String keyword, Long pageNo, Long pageSize);
+
+    /**
+     * 批量删除用户信息
+     * @param ids
+     * @return
+     */
+    public boolean deleteUserAuthBatch(List<Long> ids);
 
 
 }
