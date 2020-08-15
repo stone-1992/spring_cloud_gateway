@@ -5,7 +5,7 @@
     <parent>
         <artifactId>stone-platform</artifactId>
         <groupId>com.stone</groupId>
-        <version>${project.revision}</version>
+        <version>${revision}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>stone-service-three</artifactId>

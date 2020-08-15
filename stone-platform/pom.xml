@@ -6,7 +6,7 @@
     <groupId>com.stone</groupId>
     <artifactId>stone-platform</artifactId>
     <packaging>pom</packaging>
-    <version>${project.revision}</version>
+    <version>${revision}</version>
     <description>stone平台</description>
 
     <!-- 子模块 -->
@@ -24,7 +24,7 @@
 
     <properties>
         <!-- Project revision -->
-        <project.revision>1.2.0-SNAPSHOT</project.revision>
+        <revision>1.2.0-SNAPSHOT</revision>
         <!--指定项目打包UTF-8编码 -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!--指定maven编译jdk版本 -->
@@ -186,67 +186,67 @@
             <dependency>
                 <groupId>com.stone</groupId>
                 <artifactId>stone-common-async</artifactId>
-                <version>${project.revision}</version>
+                <version>${revision}</version>
             </dependency>
             <!-- auth-->
             <dependency>
                 <groupId>com.stone</groupId>
                 <artifactId>stone-auth</artifactId>
-                <version>${project.revision}</version>
+                <version>${revision}</version>
             </dependency>
             <!-- 核心 core-->
             <dependency>
                 <groupId>com.stone</groupId>
                 <artifactId>stone-common-core</artifactId>
-                <version>${project.revision}</version>
+                <version>${revision}</version>
             </dependency>
             <!-- datasource-->
             <dependency>
                 <groupId>com.stone</groupId>
                 <artifactId>stone-common-datasource</artifactId>
-                <version>${project.revision}</version>
+                <version>${revision}</version>
             </dependency>
             <!-- dubbo -->
             <dependency>
                 <groupId>com.stone</groupId>
                 <artifactId>stone-common-dubbo</artifactId>
-                <version>${project.revision}</version>
+                <version>${revision}</version>
             </dependency>
             <!-- kafka -->
             <dependency>
                 <groupId>com.stone</groupId>
                 <artifactId>stone-common-kafka</artifactId>
-                <version>${project.revision}</version>
+                <version>${revision}</version>
             </dependency>
             <!-- model 实体类-->
             <dependency>
                 <groupId>com.stone</groupId>
                 <artifactId>stone-common-model</artifactId>
-                <version>${project.revision}</version>
+                <version>${revision}</version>
             </dependency>
             <!-- Excel poi 导入导出-->
             <dependency>
                 <groupId>com.stone</groupId>
                 <artifactId>stone-common-poi</artifactId>
-                <version>${project.revision}</version>
+                <version>${revision}</version>
             </dependency>
             <!-- redis -->
             <dependency>
                 <groupId>com.stone</groupId>
                 <artifactId>stone-common-redis</artifactId>
-                <version>${project.revision}</version>
+                <version>${revision}</version>
             </dependency>
             <!-- swagger -->
             <dependency>
                 <groupId>com.stone</groupId>
                 <artifactId>stone-common-swagger</artifactId>
-                <version>${project.revision}</version>
+                <version>${revision}</version>
             </dependency>
             <!-- usercenter -->
             <dependency>
                 <groupId>com.stone</groupId>
                 <artifactId>stone-user-center-api</artifactId>
-                <version>${project.revision}</version>
+                <version>${revision}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
