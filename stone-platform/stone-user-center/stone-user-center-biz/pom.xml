@@ -69,6 +69,12 @@
             <groupId>com.stone</groupId>
             <artifactId>stone-user-center-api</artifactId>
         </dependency>
+
+        <!-- poi 导入导出-->
+        <dependency>
+            <groupId>com.stone</groupId>
+            <artifactId>stone-common-poi</artifactId>
+        </dependency>
     </dependencies>
     <build>
         <plugins>

@@ -31,7 +31,6 @@ public class UserController {
     public R<Boolean> addUserAuth(@RequestBody UserAuth userAuth) {
         // 校验参数
         ValidatorUtils.validateEntity(userAuth, AddGroup.class);
-
         return R.ok(userAuthService.addUserAuth(userAuth));
     }
 
@@ -49,14 +48,14 @@ public class UserController {
 
     @GetMapping("selectUserAuthList")
     @ApiOperation("查询用户信息list集合")
-    public R<List<UserAuth>> selectUserAuthList(){
+    public R<List<UserAuth>> selectUserAuthList() {
         UserAuth userAuth = new UserAuth();
         return R.ok(userAuthService.selectUserAuthList(userAuth));
     }
 
     @GetMapping("selectUserAuthPage")
     @ApiOperation("分页查询用户信息")
-    public R<List<UserAuth>> selectUserAuthPage(@RequestParam("keyword") String keyword, @RequestParam("pageNo") Long pageNo, @RequestParam("pageSize") Long pageSize){
+    public R<List<UserAuth>> selectUserAuthPage(@RequestParam("keyword") String keyword, @RequestParam("pageNo") Long pageNo, @RequestParam("pageSize") Long pageSize) {
         Page<UserAuth> userAuthPage = userAuthService.selectUserAuthPage(keyword, pageNo, pageSize);
         PageBean pageBean = PageBean.of(userAuthPage.getCurrent(), userAuthPage.getSize(), userAuthPage.getTotal());
         return R.ok(userAuthPage.getRecords(), pageBean);
@@ -64,14 +63,14 @@ public class UserController {
 
     @DeleteMapping("deleteAuthUserBath")
     @ApiOperation("批量删除用户信息")
-    public R<Boolean> deleteAuthUserBath(@RequestBody UserAuthQuery userAuthQuery){
+    public R<Boolean> deleteAuthUserBath(@RequestBody UserAuthQuery userAuthQuery) {
         List<Long> ids = userAuthQuery.getIds();
         return R.ok(userAuthService.deleteUserAuthBatch(ids));
     }
 
     @PostMapping("test")
     @ApiOperation("test")
-    public R test(@RequestBody UserAuth userAuth){
+    public R test(@RequestBody UserAuth userAuth) {
         System.err.println(userAuth);
         return R.ok();
     }
