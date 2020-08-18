@@ -2,7 +2,6 @@ package com.stone.controller;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.convert.Convert;
-import cn.hutool.core.io.IoUtil;
 import cn.hutool.core.lang.TypeReference;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.alibaba.excel.EasyExcel;
@@ -23,17 +22,11 @@ import io.swagger.annotations.ApiOperation;
 import lombok.SneakyThrows;
 import model.exption.BusinessException;
 import model.group.AddGroup;
-import org.springframework.core.io.ClassPathResource;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletResponse;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Pattern;
-import javax.validation.constraints.Size;
 import java.io.File;
-import java.io.InputStream;
-import java.net.URLEncoder;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -90,7 +83,7 @@ public class PersonController {
     @SneakyThrows
     public void templatePerson(HttpServletResponse response) {
         String filePath = "template" + File.separator + "person.xlsx";
-        ExportUtil.excelTemplateDown(response, "person.xlsx", filePath);
+        ExportUtil.excelTemplateDown(response, "员工导入模板.xlsx", filePath);
     }
 
     @PostMapping("/import")

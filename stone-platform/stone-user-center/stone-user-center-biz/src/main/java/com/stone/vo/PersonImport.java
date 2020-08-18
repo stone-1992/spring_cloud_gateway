@@ -1,13 +1,19 @@
 package com.stone.vo;
 
+import cn.hutool.core.date.DateUnit;
+import cn.hutool.core.date.DateUtil;
 import com.alibaba.excel.annotation.ExcelProperty;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModel;
 import lombok.Data;
 import model.group.AddGroup;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
+import java.util.Date;
 
 /**
  * 员工导入类
@@ -31,6 +37,23 @@ public class PersonImport {
     @ExcelProperty("手机号码")
     private String mobile;
 
+    @NotBlank(message = "员工卡号不能为空", groups = { AddGroup.class})
+    @ExcelProperty(value = "员工卡号")
+    private String cardNumber;
+
+    @NotNull(message = "入职日期不能为空", groups = { AddGroup.class})
+    @ExcelProperty(value = "入职日期")
+    private String entryDateExt;
+
+    /**
+     * 入职日期
+     */
+    private Date entryDate;
+
+    @NotNull(message = "年龄不能为空", groups = { AddGroup.class})
+    @ExcelProperty(value = "年龄")
+    private Integer age;
+
     /*性别：1 男， 0 女*/
     private Integer gender;
 
@@ -43,5 +66,9 @@ public class PersonImport {
         }else {
             return 0;
         }
+    }
+
+    public Date getEntryDate(){
+        return DateUtil.parseDate(entryDateExt);
     }
 }
