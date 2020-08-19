@@ -14,6 +14,8 @@ import java.util.Optional;
  * isPresent() ： 判断是否包含值
  * orElse(T t) : 如果调用对象包含值，返回改制，否则返回t
  * orElseGet(Supplier s) :
+ *
+ * @author stone
  */
 public class OptionalTest {
 

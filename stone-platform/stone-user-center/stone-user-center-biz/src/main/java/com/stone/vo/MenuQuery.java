@@ -8,6 +8,7 @@ import java.util.List;
 
 /**
  * 菜单管理查询封装类
+ * @author stone
  */
 @ApiModel
 @Data

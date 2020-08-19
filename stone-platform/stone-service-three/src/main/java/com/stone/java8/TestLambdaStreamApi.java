@@ -15,6 +15,7 @@ import java.util.stream.Stream;
  * 1、创建 Stream
  * 2、中间操作
  * 3、终止操作
+ * @author stone
  */
 public class TestLambdaStreamApi {
 
@@ -132,15 +133,15 @@ public class TestLambdaStreamApi {
     public void test5(){
 
         // allMatch
-        boolean allMatch = employees.stream().allMatch((e) -> e.getEmplName().equals("张三1"));
+        boolean allMatch = employees.stream().allMatch((e) -> "张三1".equals(e.getEmplName()));
         System.err.println("allMatch : " + allMatch);
 
         // anyMatch
-        boolean anyMatch = employees.stream().anyMatch((e) -> e.getEmplName().equals("张三1"));
+        boolean anyMatch = employees.stream().anyMatch((e) -> "张三1".equals(e.getEmplName()));
         System.err.println("anyMatch : " + anyMatch);
 
         // noneMatch
-        boolean noneMatch = employees.stream().noneMatch((e) -> e.getEmplName().equals("张三1"));
+        boolean noneMatch = employees.stream().noneMatch((e) -> "张三1".equals(e.getEmplName()));
         System.err.println("noneMatch : " + noneMatch);
 
         // findFirst
@@ -185,7 +186,7 @@ public class TestLambdaStreamApi {
         sortedString.forEach(System.err::println);
         // 2、定制排序
         List<Employee> collect = employees.stream().sorted((e1, e2) -> {
-            if (e1.getId() == e2.getId()) {
+            if (e1.getId().equals(e2.getId()) ) {
                 return e1.getEmplName().compareTo(e2.getEmplName());
             } else {
                 return e1.getId().compareTo(e2.getId());
@@ -250,7 +251,9 @@ public class TestLambdaStreamApi {
     }
 
 
-    // 1、创建 Stream
+    /**
+     * 1、创建 Stream
+     */
     @Test
     public void test1() {
         // 1、可以通过 Collection 系列集合提供的 Stream() 或者 parallelStream()

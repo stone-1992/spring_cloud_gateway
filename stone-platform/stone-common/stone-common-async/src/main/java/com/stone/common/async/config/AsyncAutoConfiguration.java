@@ -20,6 +20,7 @@ import java.util.concurrent.ThreadPoolExecutor;
  * @classname AsyncAutoConfiguration
  * @description 异步执行器自动配置
  * @date 2020/3/20 9:07
+ * @author stone
  */
 @Slf4j
 @EnableAsync

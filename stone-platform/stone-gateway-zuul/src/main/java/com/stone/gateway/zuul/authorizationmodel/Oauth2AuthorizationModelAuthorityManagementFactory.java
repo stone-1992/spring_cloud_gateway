@@ -10,6 +10,7 @@ import org.springframework.stereotype.Component;
  * @title
  * @date 2019年5月23日
  * @version 1.0
+ * @author stone
  */
 @Component
 public class Oauth2AuthorizationModelAuthorityManagementFactory {

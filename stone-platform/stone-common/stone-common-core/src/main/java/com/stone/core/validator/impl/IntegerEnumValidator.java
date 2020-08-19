@@ -9,6 +9,7 @@ import javax.validation.ConstraintValidatorContext;
  * @classname IntegerEnumValidator
  * @description
  * @date 2020/4/21 13:31
+ * @author stone
  */
 public class IntegerEnumValidator implements ConstraintValidator<IntegerEnum,Integer> {
 

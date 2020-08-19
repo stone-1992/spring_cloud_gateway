@@ -19,6 +19,7 @@ import java.time.format.DateTimeFormatter;
  * @classname JavaTimeModule
  * @description java8日期时间序列化
  * @date 2020/1/3 15:53
+ * @author stone
  */
 public class JavaTimeModule extends SimpleModule {
     public JavaTimeModule() {

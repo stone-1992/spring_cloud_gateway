@@ -25,6 +25,7 @@ import org.springframework.stereotype.Component;
 /**
  * @classname AuthorizationServerConfig
  * @description 认证服务器配置
+ * @author stone
  */
 @Slf4j
 @Component

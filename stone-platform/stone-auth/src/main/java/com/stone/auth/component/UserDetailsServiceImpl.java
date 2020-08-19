@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 /**
  * @classname UserDetailsServiceImpl
  * @description
+ * @author stone
  */
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {

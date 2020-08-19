@@ -9,6 +9,7 @@ import org.springframework.http.HttpStatus;
 /**
  * @classname Auth2ExceptionSerializer
  * @description OAuth2 异常格式化
+ * @author stone
  */
 public class Auth2ExceptionSerializer extends StdSerializer<WebAppResponseExceptionTranslator.Auth2Exception> {
 

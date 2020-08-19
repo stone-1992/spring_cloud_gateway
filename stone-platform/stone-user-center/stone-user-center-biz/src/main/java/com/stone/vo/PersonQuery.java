@@ -6,6 +6,10 @@ import lombok.Data;
 
 import java.util.List;
 
+/**
+ * 员工查询类
+ * @author stone
+ */
 @ApiModel
 @Data
 public class PersonQuery {

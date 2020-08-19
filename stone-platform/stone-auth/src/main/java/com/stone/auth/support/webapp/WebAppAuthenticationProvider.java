@@ -26,6 +26,7 @@ import java.util.stream.Collectors;
 /**
  * @classname WebAppAuthenticationProvider
  * @description
+ * @author stone
  */
 @Slf4j
 @NoArgsConstructor

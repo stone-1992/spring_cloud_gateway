@@ -13,6 +13,7 @@ import org.springframework.core.annotation.Order;
  * @title
  * @date 2020年3月27日
  * @version 1.0
+ * @author stone
  */
 @Configuration
 public class WebFilterConfig {

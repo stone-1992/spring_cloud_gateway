@@ -12,6 +12,7 @@ import lombok.extern.slf4j.Slf4j;
  * @classname GenderConverter
  * @description 性别转换器
  * @date 2020/4/2 15:12
+ * @author stone
  */
 @Slf4j
 public class GenderConverter implements Converter<Integer> {
@@ -20,6 +21,9 @@ public class GenderConverter implements Converter<Integer> {
      */
     @Getter
     enum Gender{
+        /**
+         * (code, gender)
+         */
         UNKNOWN(0,"未知"),
         MAN(1,"男"),
         WOMAN(2,"女"),;

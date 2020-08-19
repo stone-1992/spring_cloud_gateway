@@ -25,6 +25,7 @@ import lombok.extern.slf4j.Slf4j;
  * @title
  * @date 2020年3月27日
  * @version 1.0
+ * @author stone
  */
 @Slf4j
 public class CorsResponseFilter implements Filter {

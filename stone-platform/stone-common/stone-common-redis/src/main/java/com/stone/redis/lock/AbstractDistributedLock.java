@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
  * @classname AbstractDistributedLock
  * @description 分布式锁抽象类
  * @date 2020/4/24 16:50
+ * @author stone
  */
 @Component
 public abstract class AbstractDistributedLock implements DistributedLock {

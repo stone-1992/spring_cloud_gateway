@@ -12,6 +12,7 @@ import java.util.function.Supplier;
  * @title 
  * @date 2020年3月13日
  * @version 1.0
+ * @author stone
  */
 public class ListUtils extends BeanUtils {
 

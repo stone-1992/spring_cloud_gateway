@@ -6,6 +6,10 @@ import com.stone.vo.UserAuth;
 
 import java.util.List;
 
+/**
+ * 用户接口类
+ * @author stone
+ */
 public interface UserAuthService extends IServiceExpander<UserAuth> {
 
     /**

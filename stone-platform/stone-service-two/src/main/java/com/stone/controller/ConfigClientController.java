@@ -9,9 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * nacos 配置中心
  * @RefreshScope  SpringCloud的原生注解
+ * @RefreshScope // 支持Nacos 的动态刷新
+ * @author stone
  */
 @RestController
-@RefreshScope // 支持Nacos 的动态刷新
+@RefreshScope
 public class ConfigClientController {
 
     @Value(value = "${config.info}")

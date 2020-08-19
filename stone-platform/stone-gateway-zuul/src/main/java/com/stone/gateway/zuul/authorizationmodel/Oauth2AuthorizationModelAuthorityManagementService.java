@@ -7,6 +7,7 @@ package com.stone.gateway.zuul.authorizationmodel;
  * @title
  * @date 2019年5月23日
  * @version 1.0
+ * @author stone
  */
 public interface Oauth2AuthorizationModelAuthorityManagementService {
 

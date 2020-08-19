@@ -2,6 +2,7 @@ package com.stone.designMode.engineeringMode;
 
 /**
  * 加法操作
+ * @author stone
  */
 public class OperationAdd implements Operation{
 

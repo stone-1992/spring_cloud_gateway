@@ -13,6 +13,7 @@ import com.stone.swagger.annotation.EnableZhcxSwagger2;
  * @EnableZhcxSwagger2 swagger
  * @EnableDiscoveryClient 服务发现
  * @EnableDubbo dubbo
+ * @author stone
  */
 
 @SpringBootApplication

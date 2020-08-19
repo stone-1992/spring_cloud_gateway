@@ -15,6 +15,7 @@ import javax.validation.constraints.Size;
  * @version 1.0
  * @title
  * @date 2020年5月13日
+ * @author stone
  */
 @ApiModel("员工类")
 @Data

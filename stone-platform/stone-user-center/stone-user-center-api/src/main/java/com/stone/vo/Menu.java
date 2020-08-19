@@ -18,6 +18,7 @@ import java.util.Date;
 
 /**
  * 菜单信息数据库实体类
+ * @author Stone
  */
 @Data
 @NoArgsConstructor
@@ -51,7 +52,6 @@ public class Menu implements Serializable {
      * 上级ID
      */
     @TableField(value = "parent_id")
-    // @NotNull(message = "上级组织不能为空", groups = { AddGroup.class})
     private Long parentId;
 
     /**

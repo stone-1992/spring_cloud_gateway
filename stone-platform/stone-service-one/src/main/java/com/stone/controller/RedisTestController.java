@@ -13,6 +13,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.stone.redis.lock.DistributedLock;
 
+/**
+ * @author stone
+ */
 @Api(tags = "Redis测试接口")
 @RequestMapping("/redisTest")
 @RestController
@@ -24,8 +27,10 @@ public class RedisTestController {
 	@Autowired
 	private DistributedLock lock;
 
-	// Redis key
-	String REDIS_KEY = "bp:test";
+	/**
+	 * Redis key
+	 */
+	public static final String REDIS_KEY = "bp:test";
 
 	@ApiOperation(value = "设置Redis测试接口")
 	@GetMapping("set")

@@ -10,6 +10,7 @@ import org.springframework.stereotype.Component;
 /**
  * @classname WebAppAuthenticationSecurityConfig
  * @description
+ * @author stone
  */
 @Component
 public class WebAppAuthenticationSecurityConfig extends SecurityConfigurerAdapter<DefaultSecurityFilterChain, HttpSecurity> {

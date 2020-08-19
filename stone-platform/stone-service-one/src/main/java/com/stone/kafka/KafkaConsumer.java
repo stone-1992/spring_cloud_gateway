@@ -10,6 +10,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * kafka 消费者
+ * @author stone
  */
 @Component
 public class KafkaConsumer {

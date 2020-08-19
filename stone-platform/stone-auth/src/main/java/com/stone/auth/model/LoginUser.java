@@ -12,6 +12,7 @@ import java.util.Collection;
 /**
  * @classname LoginUser
  * @description 用户授权实体绑定spring security
+ * @author stone
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

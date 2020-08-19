@@ -7,6 +7,7 @@ import model.dto.AuthUserInfoDTO;
  * @classname UserAuthContextHolder
  * @description 用户认证信息上下文
  * @date 2020/4/20 9:27
+ * @author stone
  */
 public class UserAuthContextHolder {
     private final static ThreadLocal<AuthUserInfoDTO> THREAD_LOCAL_USER_AUTH = new InheritableThreadLocal<AuthUserInfoDTO>();

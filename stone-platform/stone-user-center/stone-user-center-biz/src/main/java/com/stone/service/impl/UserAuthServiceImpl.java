@@ -12,6 +12,10 @@ import com.stone.vo.UserAuth;
 
 import java.util.List;
 
+/**
+ * 用户实现类
+ * @author stone
+ */
 @Service(register = true)
 public class UserAuthServiceImpl extends ServiceExpanderImpl<UserAuthMapper, UserAuth> implements UserAuthService {
 

@@ -12,11 +12,12 @@ import java.util.function.Consumer;
  * 对象::实例方法名
  * 类::静态方法名
  * 类::实例方法名
+ * @author stone
  */
 public class TestLambdaMethodRef {
 
     @Test
-    public void test1(){
+    public void testTest(){
         Consumer<String> con = (x)-> System.err.println(x);
 
         PrintStream ps = System.out;

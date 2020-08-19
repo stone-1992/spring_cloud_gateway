@@ -44,10 +44,11 @@ import java.util.regex.Pattern;
  */
 public class TokenAuthenticationConverter
 		implements ServerAuthenticationConverter {
-	private static final Pattern authorizationPattern = Pattern.compile("^Bearer (?<token>[a-zA-Z0-9-._~+/]+)=*$");
+	private static Pattern authorizationPattern = Pattern.compile("^Bearer (?<token>[a-zA-Z0-9-._~+/]+)=*$");
 
 	private boolean allowUriQueryParameter = false;
 
+	@Override
 	public Mono<Authentication> convert(ServerWebExchange exchange) {
 		return Mono.justOrEmpty(this.token(exchange.getRequest()))
 			.map(BearerTokenAuthenticationToken::new);

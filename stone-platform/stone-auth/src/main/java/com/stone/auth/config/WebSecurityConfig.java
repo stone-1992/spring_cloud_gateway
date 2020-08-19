@@ -20,6 +20,7 @@ import org.springframework.web.cors.CorsUtils;
 /**
  * @classname WebSecurityConfig
  * @description WebSecurityConfig
+ * @author stone
  */
 @Slf4j
 @EnableWebSecurity

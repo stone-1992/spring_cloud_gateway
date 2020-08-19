@@ -12,6 +12,7 @@ import org.springframework.security.oauth2.provider.authentication.OAuth2Authent
  * @version 1.0
  * @title
  * @date 2019年5月24日
+ * @author stone
  */
 public class Oauth2AuthorizationModelUtils {
 

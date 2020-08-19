@@ -9,6 +9,7 @@ import java.util.List;
 
 /**
  * 模拟生成Bean
+ * @author stone
  */
 public class CreateBeanUtils {
 

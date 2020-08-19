@@ -9,6 +9,7 @@ import java.util.List;
  * @classname MyService
  * @description
  * @date 2020/5/13 11:25
+ * @author stone
  */
 public interface IServiceExpander<T> extends IService<T> {
     /**

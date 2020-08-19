@@ -6,16 +6,24 @@ package com.stone.core.uuid;
  * 保证：
  *  1、所有生成的id按时间趋势递增
  *  2、整个分布式系统内不会产生重复id（因为 datacenterId 和 workerId 来做区分）
- *
+ * @author stone
  */
 public class SnowFlakeId {
 
-    //下面两个每个5位，加起来就是10位的工作机器id
-    private long workerId;    //工作id
+    /**
+     * 下面两个每个5位，加起来就是10位的工作机器id
+     * 工作id
+     */
+    private long workerId;
 
-    private long datacenterId;   //数据id
+    /**
+     * 数据id
+     */
+    private long datacenterId;
 
-    //12位的序列号
+    /**
+     * 12位的序列号
+     */
     private long sequence;
 
     public SnowFlakeId(long workerId, long datacenterId, long sequence) {
@@ -34,35 +42,53 @@ public class SnowFlakeId {
         this.sequence = sequence;
     }
 
-    //初始时间戳
+    /**
+     * 初始时间戳
+     */
     private long twepoch = 1288834974657L;
 
-    //长度为5位
+    /**
+     * 长度为5位
+     */
     private long workerIdBits = 5L;
 
     private long datacenterIdBits = 5L;
 
-    //最大值
+    /**
+     * 最大值
+     */
     private long maxWorkerId = -1L ^ (-1L << workerIdBits);
 
     private long maxDatacenterId = -1L ^ (-1L << datacenterIdBits);
 
-    //序列号id长度
+    /**
+     * 序列号id长度
+     */
     private long sequenceBits = 12L;
 
-    //序列号最大值
+    /**
+     * 序列号最大值
+     */
     private long sequenceMask = -1L ^ (-1L << sequenceBits);
 
-    //工作id需要左移的位数，12位
+    /**
+     * 工作id需要左移的位数，12位
+     */
     private long workerIdShift = sequenceBits;
 
-    //数据id需要左移位数 12+5=17位
+    /**
+     * 数据id需要左移位数 12+5=17位
+     */
     private long datacenterIdShift = sequenceBits + workerIdBits;
 
-    //时间戳需要左移位数 12+5+5=22位
+    /**
+     * 时间戳需要左移位数 12+5+5=22位
+     */
     private long timestampLeftShift = sequenceBits + workerIdBits + datacenterIdBits;
 
-    //上次时间戳，初始值为负数
+    /**
+     * 上次时间戳，初始值为负数
+     */
     private long lastTimestamp = -1L;
 
     public long getWorkerId() {
@@ -77,7 +103,10 @@ public class SnowFlakeId {
         return System.currentTimeMillis();
     }
 
-    //下一个ID生成算法
+    /**
+     * 下一个ID生成算法
+     * @return
+     */
     public synchronized long nextId() {
         long timestamp = timeGen();
 
@@ -115,7 +144,11 @@ public class SnowFlakeId {
                 sequence;
     }
 
-    //获取时间戳，并与上次时间戳比较
+    /**
+     * 获取时间戳，并与上次时间戳比较
+     * @param lastTimestamp
+     * @return
+     */
     private long tilNextMillis(long lastTimestamp) {
         long timestamp = timeGen();
         while (timestamp <= lastTimestamp) {
@@ -124,13 +157,19 @@ public class SnowFlakeId {
         return timestamp;
     }
 
-    //获取系统时间戳
+    /**
+     * 获取系统时间戳
+     * @return
+     */
     private long timeGen() {
         return System.currentTimeMillis();
     }
 
 
-    //---------------测试---------------
+    /**
+     * ---------------测试---------------
+     * @param args
+     */
     public static void main(String[] args) {
         SnowFlakeId worker = new SnowFlakeId(1, 1, 1);
         for (int i = 0; i < 30; i++) {

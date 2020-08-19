@@ -13,6 +13,7 @@ import java.util.Enumeration;
 
 /**
  * 认证授权相关工具类
+ * @author stone
  */
 @Slf4j
 @UtilityClass

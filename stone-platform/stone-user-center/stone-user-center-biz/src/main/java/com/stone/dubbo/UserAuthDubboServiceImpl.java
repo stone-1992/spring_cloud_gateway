@@ -7,6 +7,7 @@ import javax.annotation.Resource;
 
 /**
  * 用户对外提供接口 实现类
+ * @author stone
  */
 @Service
 public class UserAuthDubboServiceImpl implements UserAuthDubboService{

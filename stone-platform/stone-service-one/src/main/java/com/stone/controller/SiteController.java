@@ -20,6 +20,9 @@ import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Executor;
 
+/**
+ * @author stone
+ */
 @Api(tags = "站点管理API接口")
 @RequestMapping("/site")
 @RestController
@@ -83,7 +86,7 @@ public class SiteController {
         CompletableFuture.allOf(siteFure, siteVoFure);
 
         List<Site> sites = siteFure.join();
-        List<SiteVO> siteVOS = siteVoFure.join();
+        List<SiteVO> siteVOList = siteVoFure.join();
         long endTime = System.currentTimeMillis();
 
         // getSiteList() 3秒, getSiteVOList() 2秒, 取最大值 ： 3秒多
@@ -96,7 +99,7 @@ public class SiteController {
     public R synchronization() {
         long startTime = System.currentTimeMillis();
         List<Site> sites = CreateBeanUtils.getSiteList();
-        List<SiteVO> siteVOS = CreateBeanUtils.getSiteVOList();
+        List<SiteVO> siteVOList = CreateBeanUtils.getSiteVOList();
         long endTime = System.currentTimeMillis();
 
         // getSiteList() 3秒, getSiteVOList() 2秒, 两时间相加 ： 5秒多

@@ -11,6 +11,7 @@ import java.util.Set;
 /**
  * @classname OAuth2ClientProperties
  * @description
+ * @author stone
  */
 @ConfigurationProperties(prefix = "spring.security.oauth2.client")
 public class OAuth2ClientProperties {

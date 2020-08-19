@@ -10,6 +10,7 @@ import java.util.List;
 
 /**
  * 菜单信息数据库实体类
+ * @author stone
  */
 @Data
 @NoArgsConstructor

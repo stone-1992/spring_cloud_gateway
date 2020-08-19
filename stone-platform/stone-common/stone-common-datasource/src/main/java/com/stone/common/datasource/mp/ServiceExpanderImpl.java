@@ -17,6 +17,7 @@ import java.util.List;
  * @version 1.0
  * @Description
  * @date 2020年04月16日 14:53
+ * @author stone
  */
 public class ServiceExpanderImpl<M extends BaseMapperExpander<T>, T> extends ServiceImpl<M, T>
 		implements IServiceExpander<T> {

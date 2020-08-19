@@ -8,6 +8,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+/**
+ * @author stone
+ * @param <T>
+ */
 public class TreeUtils<T> {
 	/**
 	 * 把列表转换为树结构

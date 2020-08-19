@@ -6,6 +6,10 @@ import com.stone.vo.Person;
 
 import java.util.List;
 
+/**
+ * 员工接口类
+ * @author stone
+ */
 public interface PersonService extends IServiceExpander<Person> {
 
     /**

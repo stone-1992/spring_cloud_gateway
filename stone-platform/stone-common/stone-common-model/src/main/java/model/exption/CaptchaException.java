@@ -4,6 +4,7 @@ import lombok.EqualsAndHashCode;
 
 /**
  * 验证码异常
+ * @author stone
  */
 @EqualsAndHashCode(callSuper = false)
 public class CaptchaException extends RuntimeException {

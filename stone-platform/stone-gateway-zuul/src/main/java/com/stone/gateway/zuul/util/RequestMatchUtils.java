@@ -11,10 +11,11 @@ import org.springframework.util.AntPathMatcher;
  * @title
  * @date 2020年4月15日
  * @version 1.0
+ * @author stone
  */
 public class RequestMatchUtils {
 
-	private final static AntPathMatcher antPathMatcher = new AntPathMatcher();
+	private final static AntPathMatcher ANT_PATH_MATCHER = new AntPathMatcher();
 
 	/**
 	 * 匹配请求
@@ -32,7 +33,7 @@ public class RequestMatchUtils {
 			}
 			// 路径匹配
 			for (Map.Entry<String, String> entry : cacheValues.entrySet()) {
-				if (antPathMatcher.match(entry.getKey(), matchStr)) {
+				if (ANT_PATH_MATCHER.match(entry.getKey(), matchStr)) {
 					return true;
 				}
 			}
@@ -51,7 +52,7 @@ public class RequestMatchUtils {
 	public static boolean matchUrl(String requestType, String requestUri, List<String> urls) {
 		String matchStr = requestType + "--" + requestUri;
 		for (String url : urls) {
-			if (antPathMatcher.match(url, matchStr)) {
+			if (ANT_PATH_MATCHER.match(url, matchStr)) {
 				return true;
 			}
 		}
@@ -67,7 +68,7 @@ public class RequestMatchUtils {
 	 */
 	public static boolean matchUrl(String requestType, String requestUri, String url) {
 		String matchStr = requestType + "--" + requestUri;
-		if (antPathMatcher.match(url, matchStr)) {
+		if (ANT_PATH_MATCHER.match(url, matchStr)) {
 			return true;
 		}
 		return false;

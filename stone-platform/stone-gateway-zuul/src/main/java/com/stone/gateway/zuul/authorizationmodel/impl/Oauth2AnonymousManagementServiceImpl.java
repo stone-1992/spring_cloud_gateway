@@ -10,6 +10,7 @@ import com.stone.gateway.zuul.authorizationmodel.Oauth2AuthorizationModelAuthori
  * @title
  * @date 2020年4月1日
  * @version 1.0
+ * @author stone
  */
 @Service
 public class Oauth2AnonymousManagementServiceImpl implements Oauth2AuthorizationModelAuthorityManagementService {

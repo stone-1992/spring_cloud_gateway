@@ -4,6 +4,9 @@ import lombok.Data;
 
 import java.math.BigDecimal;
 
+/**
+ * @author stone
+ */
 @Data
 public class GaoDeDTO {
 

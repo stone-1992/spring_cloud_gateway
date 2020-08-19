@@ -6,6 +6,10 @@ import lombok.Data;
 
 import java.util.List;
 
+/**
+ * 用户查询类
+ * @author stone
+ */
 @ApiModel
 @Data
 public class UserAuthQuery {

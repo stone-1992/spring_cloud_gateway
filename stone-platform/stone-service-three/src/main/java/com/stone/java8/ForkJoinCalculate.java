@@ -8,6 +8,7 @@ import java.util.concurrent.RecursiveTask;
 
 /**
  * 并行流与串行流 P15
+ * @author stone
  */
 public class ForkJoinCalculate extends RecursiveTask<Long> {
 

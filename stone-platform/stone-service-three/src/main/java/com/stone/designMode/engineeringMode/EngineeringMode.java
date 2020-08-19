@@ -4,7 +4,7 @@ package com.stone.designMode.engineeringMode;
  * 1、设计模式之简单工程模式
  *
  * 设计一个计算器，通过传递符号，来获取不同类型的操作符
- *
+ * @author stone
  */
 public class EngineeringMode {
 
@@ -21,6 +21,8 @@ public class EngineeringMode {
                 break;
             case "-" :
                 operation = new OperationSub();
+                break;
+            default:
                 break;
         }
         return operation;

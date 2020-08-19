@@ -4,6 +4,7 @@ package com.stone.redis.sequence;
  * @classname Sequence
  * @description 序列号生成器接口
  * @date 2020/4/24 14:23
+ * @author stone
  */
 public interface Sequence {
 

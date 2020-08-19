@@ -13,6 +13,7 @@ import org.springframework.data.redis.core.RedisTemplate;
  * @classname DistributedLockAutoConfiguration
  * @description redis分布式锁自动配置
  * @date 2020/4/26 09:48
+ * @author stone
  */
 @Configuration
 @AutoConfigureAfter(RedisAutoConfiguration.class)

@@ -12,8 +12,8 @@ import org.springframework.context.ApplicationContext;
  * @title
  * @date 2020年3月27日
  * @version 1.0
+ * @author stone
  */
-//@EnableZhcxLog
 @EnableZuulProxy
 @SpringBootApplication
 public class BusinessGatewayZuulApplication {

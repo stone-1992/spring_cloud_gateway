@@ -4,6 +4,7 @@ import com.stone.vo.UserAuth;
 
 /**
  * 用户管理对外提供接口
+ * @author Stone
  */
 public interface UserAuthDubboService {
 

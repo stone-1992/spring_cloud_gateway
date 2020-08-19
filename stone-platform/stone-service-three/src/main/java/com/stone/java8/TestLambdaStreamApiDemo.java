@@ -7,6 +7,7 @@ import java.util.stream.Collectors;
 
 /**
  * 练习
+ * @author stone
  */
 public class TestLambdaStreamApiDemo {
 
@@ -24,7 +25,7 @@ public class TestLambdaStreamApiDemo {
      * 1,2,3,4,5  -->  1,4, 9, 16, 25
      */
     @Test
-    public void test1(){
+    public void test1Test(){
         Integer[] nums = new Integer[]{1,2,3,4,5};
         List<Integer> sumNums = Arrays.stream(nums)
                 .map((x) -> x * x).collect(Collectors.toList());
@@ -36,7 +37,7 @@ public class TestLambdaStreamApiDemo {
      * 2、怎么用 amp 和 reduce 方法数一数流中有多少个 Employee
      */
     @Test
-    public void test2(){
+    public void test2Test(){
         Integer count = employees.stream()
                 .map((e) -> 1)
                 .reduce(Integer::sum).orElse(0);

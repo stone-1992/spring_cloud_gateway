@@ -7,6 +7,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * @description 认证服务器启动类
+ * @author stone
  */
 @EnableFeignClients
 @EnableDiscoveryClient

@@ -11,6 +11,7 @@ import org.springframework.web.filter.CorsFilter;
  * @Classname WebConfig
  * @Description
  * @Date 2020/3/19 9:12
+ * @author stone
  */
 @Configuration
 public class CorsConfig {

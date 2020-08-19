@@ -16,6 +16,10 @@ import javax.management.Query;
 import java.util.List;
 import java.util.Objects;
 
+/**
+ * 员工实现类
+ * @author stone
+ */
 @Service(register = true)
 public class PersonServiceImpl extends ServiceExpanderImpl<PersonMapper, Person> implements PersonService {
 

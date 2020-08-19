@@ -6,6 +6,7 @@ import static com.stone.redis.constant.BaseRedisConstants.BASE;
  * @classname CaptchaConstant
  * @description 验证码服务器redis key常量
  * @date 2020/4/23 9:59
+ * @author stone
  */
 public interface CaptchaRedisConstants {
     /**

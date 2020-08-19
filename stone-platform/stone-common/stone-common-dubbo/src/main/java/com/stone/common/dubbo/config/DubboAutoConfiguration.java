@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Configuration;
  * @title
  * @date 2020年3月3日
  * @version 1.0
+ * @author stone
  */
 @Configuration
 @EnableConfigurationProperties(DubboProperties.class)

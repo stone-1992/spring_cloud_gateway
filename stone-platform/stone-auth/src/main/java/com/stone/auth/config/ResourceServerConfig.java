@@ -8,6 +8,7 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.R
 /**
  * @classname ResourceServerConfig
  * @description 资源服务器
+ * @author stone
  */
 @Configuration
 @EnableResourceServer

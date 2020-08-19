@@ -12,7 +12,6 @@ import java.util.List;
  * blog: https://blog.51cto.com/13005375
  * code: https://gitee.com/owenwangwen/open-capacity-platform
  */
-// @ConfigurationProperties(prefix = "permit")
 @ConfigurationProperties(prefix = "security.oauth2")
 public class PermitUrlProperties {
 
@@ -21,24 +20,29 @@ public class PermitUrlProperties {
      */
     private static final String[] ENDPOINTS = {
             "/**/actuator/**",
-            "/**/actuator/**/**",  //断点监控
+            //断点监控
+            "/**/actuator/**/**",
             "/**/doc.html",
-            "/doc.html",  //断点监控
+            //断点监控
+            "/doc.html",
             "/v2/api-docs/**",
             "/swagger-ui.html",
             "/swagger-resources/**",
-            "/webjars/**",            // api-gateway webflux swagger
+            // api-gateway webflux swagger
+            "/webjars/**",
             "/**/v2/api-docs/**",
             "/**/swagger-ui.html",
             "/**/swagger-resources/**",
-            "/**/webjars/**", //业务中心swagger
+            //业务中心swagger
+            "/**/webjars/**",
             "/**/turbine.stream",
             "/**/turbine.stream**/**",
             "/**/hystrix",
             "/**/hystrix.stream",
             "/**/hystrix/**",
             "/**/hystrix/**/**",
-            "/**/proxy.stream/**", //熔断监控
+            //熔断监控
+            "/**/proxy.stream/**",
             "/**/druid/**",
             "/**/favicon.ico",
             "/**/prometheus"

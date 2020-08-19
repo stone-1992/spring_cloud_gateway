@@ -6,6 +6,10 @@ import com.stone.vo.Menu;
 
 import java.util.List;
 
+/**
+ * 菜单 接口类
+ * @author stone
+ */
 public interface MenuService extends IServiceExpander<Menu> {
 
     /**

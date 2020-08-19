@@ -21,6 +21,7 @@ import java.util.Date;
  * @version 1.0
  * @title
  * @date 2020年5月13日
+ * @author stone
  */
 @ApiModel("员工导入类")
 @Data
@@ -54,7 +55,9 @@ public class PersonImport {
     @ExcelProperty(value = "年龄")
     private Integer age;
 
-    /*性别：1 男， 0 女*/
+    /**
+     * 性别：1 男， 0 女
+     */
     private Integer gender;
 
     @ExcelProperty(value = "性别")

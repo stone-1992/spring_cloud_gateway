@@ -15,11 +15,13 @@ import org.junit.Test;
  *
  *  Predicate<T> : 断言型接口
  *      boolean test(T t);
+ *
+ * @author stone
  */
 public class TestLambdaFunction {
 
     @Test
-    public void test1(){
+    public void testTest(){
 
     }
 

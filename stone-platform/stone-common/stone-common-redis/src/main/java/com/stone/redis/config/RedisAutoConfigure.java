@@ -24,6 +24,7 @@ import java.util.TimeZone;
  * @classname RedisConfig
  * @description redis template配置
  * @date 2020/3/4 9:50
+ * @author stone
  */
 @EnableConfigurationProperties({RedisProperties.class})
 @Configuration

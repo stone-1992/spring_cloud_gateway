@@ -23,6 +23,7 @@ import java.util.List;
 
 /**
  * 菜单信息Controller
+ * @author stone
  */
 @RestController
 @RequestMapping("/menu")
@@ -79,7 +80,6 @@ public class MenuController {
     @GetMapping("selectMenuTree")
     @ApiOperation("获取菜单树")
     public R<List<MenuTree>> selectMenuTree() throws Exception {
-        System.err.println("获取菜单树========================================");
         Menu menu = new Menu();
         List<Menu> menus = menuService.listMenus(menu);
         List<MenuTree> menuTrees = Convert.convert(new TypeReference<List<MenuTree>>() {

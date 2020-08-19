@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * sentinel s流控 Controller
+ * @author stone
  */
 @RestController
 public class FlowLimitController {

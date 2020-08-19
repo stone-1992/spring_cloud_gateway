@@ -8,6 +8,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
  * @EnableDiscoveryClient 启动服务注册，alibab Nacos 服务注册
+ * @author stone
  */
 @SpringBootApplication
 @EnableDiscoveryClient

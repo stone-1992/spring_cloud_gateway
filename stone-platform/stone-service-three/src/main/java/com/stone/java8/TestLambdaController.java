@@ -20,11 +20,13 @@ import java.util.stream.Collectors;
  * 语法格式二：有一个参数，并且无返回值
  *  ()
  *
+ *  @author stone
+ *
  */
 public class TestLambdaController {
 
     @Test
-    public void test1(){
+    public void test1Test(){
         // 匿名内部类
         Comparator<Integer> comparator = new Comparator<Integer>() {
             @Override
@@ -39,7 +41,7 @@ public class TestLambdaController {
     }
 
     @Test
-    public void test2(){
+    public void test2Test(){
         List<Employee> employees = Arrays.asList(
                 new Employee(1L,"张三1",21),
                 new Employee(2L,"张三2",32),
@@ -53,7 +55,7 @@ public class TestLambdaController {
     }
 
     @Test
-    public void test3(){
+    public void test3Test(){
         // 以前写法
         Runnable r = new Runnable() {
             @Override
@@ -68,7 +70,7 @@ public class TestLambdaController {
     }
 
     @Test
-    public void test4(){
+    public void test4Test(){
         Consumer<String> consumer = (x) -> System.err.println(x);
         consumer.accept("我到");
     }

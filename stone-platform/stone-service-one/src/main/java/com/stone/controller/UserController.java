@@ -10,6 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Random;
 
+/**
+ * @author stone
+ */
 @Api(tags = "获取用户信息")
 @RequestMapping("/user")
 @RestController

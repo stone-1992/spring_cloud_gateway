@@ -4,6 +4,7 @@ package com.stone.redis.constant;
  * @classname BaseDataLineRedisConstants
  * @description 基础数据 线路管理Redis key常量
  * @date 2020/5/25 15:03
+ * @author stone
  */
 public interface BaseDataRedisConstants {
     /**

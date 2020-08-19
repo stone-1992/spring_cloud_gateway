@@ -8,6 +8,7 @@ import java.util.Map;
  * @classname DynamicDataSourceProperties
  * @description 多数据源属性
  * @date 2019/11/5 13:25
+ * @author stone
  */
 @ConfigurationProperties(prefix = "dynamic")
 public class DynamicDataSourceProperties {

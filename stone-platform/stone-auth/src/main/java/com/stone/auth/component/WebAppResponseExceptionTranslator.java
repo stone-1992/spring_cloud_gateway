@@ -23,6 +23,7 @@ import java.util.Locale;
 /**
  * @classname WebResponseExceptionTranslator
  * @description OAuth Server 异常处理,重写oauth 默认实现
+ * @author stone
  */
 @Slf4j
 public class WebAppResponseExceptionTranslator implements WebResponseExceptionTranslator<OAuth2Exception> {

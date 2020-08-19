@@ -9,6 +9,7 @@ import java.util.Collection;
  * @classname Assert
  * @description 断言
  * @date 2020/3/18 9:49
+ * @author stone
  */
 public class Assert {
 

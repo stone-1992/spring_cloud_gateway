@@ -18,6 +18,7 @@ import java.util.Date;
 
 /**
  * 员工信息数据库实体类
+ * @author  Stone
  */
 @Data
 @NoArgsConstructor

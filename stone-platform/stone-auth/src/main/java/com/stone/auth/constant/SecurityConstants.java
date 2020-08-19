@@ -3,6 +3,7 @@ package com.stone.auth.constant;
 /**
  * @classname SecurityConstants
  * @description Security常量
+ * @author stone
  */
 public interface SecurityConstants {
 

@@ -10,6 +10,7 @@ import org.springframework.web.filter.CorsFilter;
 /**
  * @classname CorsConfig
  * @description
+ * @author stone
  */
 @Configuration
 public class CorsConfig {

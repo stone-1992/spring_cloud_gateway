@@ -10,6 +10,7 @@ import org.springframework.data.redis.core.RedisTemplate;
  * @classname RedisSequence
  * @description Redis Id生成器
  * @date 2020/4/24 14:25
+ * @author stone
  */
 @Data
 @NoArgsConstructor

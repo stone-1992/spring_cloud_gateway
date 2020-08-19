@@ -13,6 +13,10 @@ import com.stone.vo.Menu;
 
 import java.util.List;
 
+/**
+ * 菜单 service 实现类
+ * @author stone
+ */
 @Service(register = true)
 public class MenuServiceImpl extends ServiceExpanderImpl<MenuMapper, Menu> implements MenuService {
 

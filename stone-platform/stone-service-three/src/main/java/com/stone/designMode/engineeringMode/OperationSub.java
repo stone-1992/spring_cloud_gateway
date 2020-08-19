@@ -2,6 +2,7 @@ package com.stone.designMode.engineeringMode;
 
 /**
  * 减法操作
+ * @author stone
  */
 public class OperationSub implements Operation{
     @Override

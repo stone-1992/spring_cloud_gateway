@@ -10,8 +10,8 @@ import javax.servlet.Filter;
 /**
  * @classname ValidateCodeSecurityConfig
  * @description 验证码配置
+ * @author stone
  */
-//@Component
 public class ValidateCodeSecurityConfig extends SecurityConfigurerAdapter<DefaultSecurityFilterChain, HttpSecurity> {
 
     @Resource
