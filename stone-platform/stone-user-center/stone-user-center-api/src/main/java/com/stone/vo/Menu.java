@@ -51,13 +51,13 @@ public class Menu implements Serializable {
      * 上级ID
      */
     @TableField(value = "parent_id")
+    // @NotNull(message = "上级组织不能为空", groups = { AddGroup.class})
     private Long parentId;
 
     /**
      * 跳转url
      */
     @TableField(value = "url")
-    @NotBlank(message = "url不能为空", groups = { AddGroup.class})
     private String url;
 
     /**

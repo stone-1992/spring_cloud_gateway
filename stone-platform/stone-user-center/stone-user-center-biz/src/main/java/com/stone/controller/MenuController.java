@@ -1,13 +1,18 @@
 package com.stone.controller;
 
+import cn.hutool.core.collection.CollUtil;
+import cn.hutool.core.convert.Convert;
+import cn.hutool.core.lang.TypeReference;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.stone.core.util.PageBean;
 import com.stone.core.util.R;
+import com.stone.core.util.TreeUtils;
 import com.stone.core.validator.ValidatorUtils;
 import com.stone.service.MenuService;
 import com.stone.vo.Menu;
 import com.stone.vo.MenuQuery;
+import com.stone.vo.MenuTree;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import model.group.AddGroup;
@@ -62,5 +67,27 @@ public class MenuController {
     public R<Boolean> deleteMenuBath(@RequestBody MenuQuery menuQuery) {
         List<Long> ids = menuQuery.getIds();
         return R.ok(menuService.deleteMenuBatch(ids));
+    }
+
+    @GetMapping("selectMenuList")
+    @ApiOperation("查询所有的菜单")
+    public R<List<Menu>> selectMenuList(){
+        Menu menu = new Menu();
+        return R.ok(menuService.listMenus(menu));
+    }
+
+    @GetMapping("selectMenuTree")
+    @ApiOperation("获取菜单树")
+    public R<List<MenuTree>> selectMenuTree() throws Exception {
+        System.err.println("获取菜单树========================================");
+        Menu menu = new Menu();
+        List<Menu> menus = menuService.listMenus(menu);
+        List<MenuTree> menuTrees = Convert.convert(new TypeReference<List<MenuTree>>() {
+        }, menus);
+        if(CollUtil.isEmpty(menuTrees)){
+            return null;
+        }
+        List<MenuTree> tree = TreeUtils.getTree(menuTrees, "id", "parentId", "children", null);
+        return R.ok(tree);
     }
 }

@@ -6,6 +6,7 @@ import cn.hutool.core.util.StrUtil;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class TreeUtils<T> {
 	/**
@@ -71,7 +72,7 @@ public class TreeUtils<T> {
 			for (int i = 0; i < originalList.size(); i++) {
 				T t = originalList.get(i);
 				Object parentId = ReflectUtil.getFieldValue(t, parentFieldName);
-				if (topValue.equals(String.valueOf(parentId))) {
+				if (topValue.equals(String.valueOf(parentId)) || Objects.isNull(parentId)) {
 					topList.add(t);
 				}
 			}
