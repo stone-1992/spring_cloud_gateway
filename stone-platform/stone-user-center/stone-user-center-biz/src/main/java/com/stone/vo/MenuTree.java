@@ -40,6 +40,9 @@ public class MenuTree implements Serializable {
     @ApiModelProperty("层级")
     private Integer layer;
 
+    @ApiModelProperty("状态")
+    private String status;
+
     @ApiModelProperty("备注")
     private String remark;
 

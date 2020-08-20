@@ -74,6 +74,7 @@ public class MenuController {
     @ApiOperation("查询所有的菜单")
     public R<List<Menu>> selectMenuList(){
         Menu menu = new Menu();
+        menu.setStatus("1");
         return R.ok(menuService.listMenus(menu));
     }
 
@@ -81,12 +82,14 @@ public class MenuController {
     @ApiOperation("获取菜单树")
     public R<List<MenuTree>> selectMenuTree() throws Exception {
         Menu menu = new Menu();
+        menu.setStatus("1");
         List<Menu> menus = menuService.listMenus(menu);
         List<MenuTree> menuTrees = Convert.convert(new TypeReference<List<MenuTree>>() {
         }, menus);
         if(CollUtil.isEmpty(menuTrees)){
             return null;
         }
+        // 封装树
         List<MenuTree> tree = TreeUtils.getTree(menuTrees, "id", "parentId", "children", null);
         return R.ok(tree);
     }

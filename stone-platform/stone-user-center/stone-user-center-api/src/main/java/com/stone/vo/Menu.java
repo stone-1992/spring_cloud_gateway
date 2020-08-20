@@ -73,6 +73,12 @@ public class Menu implements Serializable {
     private Integer layer;
 
     /**
+     * 状态
+     */
+    @TableField(value = "status")
+    private String status;
+
+    /**
      * 备注
      */
     @TableField(value = "remark")
