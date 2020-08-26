@@ -29,7 +29,7 @@ public class KafkaConsumer {
         String value = content.value();
         if (StrUtil.isNotBlank(value)) {
             SiteVO siteVO = objectMapper.readValue(content.value(), SiteVO.class);
-            System.err.println(siteVO);
+            System.err.println("消费kafka : " + siteVO);
         }
     }
 }

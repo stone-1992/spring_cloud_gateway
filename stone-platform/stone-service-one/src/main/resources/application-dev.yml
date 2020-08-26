@@ -12,16 +12,13 @@ spring:
           config:
             multi-statement-allow: true
   redis:
-#    sentinel:
-#      master: mymaster
-#      nodes: 192.168.180.140:6379
     port: 6379
     database: 4
-    host: 192.168.180.140
-    password: 123456
+    host: localhost
+    #password: 123456
 
   kafka:
-    bootstrap-servers: 172.16.102.104:9092,172.16.102.104:9093,172.16.102.104:9094
+    bootstrap-servers: 192.168.137.9:9092
     consumer:
       group-id: wisdombus-log-test
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
@@ -33,7 +30,6 @@ spring:
 dubbo:
   registry:
     address: zookeeper://192.168.137.9:2181
-    file: /@artifactId@/dubbo-registry/dubbo.cache
   application:
     name: @artifactId@
     qos-enable: false
