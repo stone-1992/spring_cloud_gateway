@@ -12,6 +12,7 @@ import org.springframework.util.concurrent.ListenableFuture;
 
 /**
  * kafka 生产者
+ *
  * @author stone
  */
 @Slf4j

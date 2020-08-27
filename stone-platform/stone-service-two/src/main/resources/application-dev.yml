@@ -14,12 +14,12 @@ spring:
   redis:
     sentinel:
       master: mymaster
-      nodes: 192.168.180.140:6379
+      nodes: localhost:6379
     port: 6379
     database: 4
 dubbo:
   registry:
-    address: zookeeper://172.16.102.11:2181?backup=172.16.102.12:2181,172.16.102.13:2181
+    address: zookeeper://localhost:2181
     file: /@artifactId@/dubbo-registry/dubbo.cache
   application:
     name: @artifactId@

@@ -12,14 +12,12 @@ spring:
           config:
             multi-statement-allow: true
   redis:
-    sentinel:
-      master: mymaster
-      nodes: 192.168.180.140:6379
     port: 6379
     database: 4
+    host: localhost
 dubbo:
   registry:
-    address: zookeeper://192.168.137.9:2181
+    address: zookeeper://localhost:2181
   application:
     name: user-center
     qos-enable: false
