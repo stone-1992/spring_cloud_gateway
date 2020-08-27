@@ -13,12 +13,10 @@
     <modules>
         <module>stone-common</module>
         <module>stone-gateway</module>
-        <module>stone-service-one</module>
         <module>stone-eureka-server</module>
-        <module>stone-service-two</module>
+        <module>stone-business-project</module>
         <module>stone-auth</module>
         <module>stone-gateway-zuul</module>
-        <module>stone-service-three</module>
         <module>stone-user-center</module>
     </modules>
 

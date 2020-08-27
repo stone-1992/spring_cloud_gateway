@@ -15,8 +15,6 @@ spring:
     port: 6379
     database: 4
     host: localhost
-    #password: 123456
-
   kafka:
     bootstrap-servers: localhost:9092
     consumer:
@@ -30,11 +28,12 @@ spring:
 dubbo:
   registry:
     address: zookeeper://localhost:2181
+    file: /@artifactId@/dubbo-registry/dubbo.cache
   application:
     name: @artifactId@
     qos-enable: false
   protocol:
-    port: 30111
+    port: 30011
     name: dubbo
   consumer:
     check: false
@@ -45,21 +44,7 @@ dubbo:
     version: 1.0.0
 logging:
   level:
-    com.stone.mapper: debug
+    com.zhcx.business.basedata.infrastructure.mapper: debug
 swagger:
-  title: 基础设施管理接口文档
+  title: 接口文档
   enabled: true
-
-##多数据源的配置
-#dynamic:
-#  datasource:
-#    slave1:
-#      driver-class-name: com.mysql.cj.jdbc.Driver
-#      url: jdbc:mysql://172.16.102.107:3388/qr_cxpay?zeroDateTimeBehavior=convertToNull&useUnicode=true&useSSL=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
-#      username: test
-#      password: test123
-#    slave2:
-#      driver-class-name: com.mysql.cj.jdbc.Driver
-#      url: jdbc:mysql://172.16.102.107:3388/wisdombus2.0_bus_time?zeroDateTimeBehavior=convertToNull&useUnicode=true&useSSL=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
-#      username: test
-#      password: test123

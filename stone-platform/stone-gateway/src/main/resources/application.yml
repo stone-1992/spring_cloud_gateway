@@ -21,6 +21,11 @@ spring:
         order: 8005
         predicates:
           - Path=/user-center/**
+      - id: business-project
+        uri: lb://business-project
+        order: 8001
+        predicates:
+          - Path=/business-project/**
 logging:
   level:
     org.springframework.cloud.gateway: TRACE

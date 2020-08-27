@@ -1,10 +1,10 @@
 server:
-  port: 8002
+  port: 8001
   servlet:
-    context-path: /service-two
+    context-path: /business-project
 spring:
   application:
-    name: service-two
+    name: business-project
   cloud:
     nacos:
       discovery:

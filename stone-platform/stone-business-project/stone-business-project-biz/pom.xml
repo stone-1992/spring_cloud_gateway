@@ -3,14 +3,17 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>stone-platform</artifactId>
+        <artifactId>stone-business-project</artifactId>
         <groupId>com.stone</groupId>
         <version>${revision}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>stone-service-two</artifactId>
+    <artifactId>stone-business-project-biz</artifactId>
+    <packaging>jar</packaging>
+    <description>业务开发工程</description>
 
     <dependencies>
+        <!-- spring boot test-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -47,9 +50,53 @@
             <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
         </dependency>
 
+        <!-- dubbo -->
+        <dependency>
+            <groupId>com.stone</groupId>
+            <artifactId>stone-common-dubbo</artifactId>
+        </dependency>
+
+        <!-- 异步处理-->
+        <dependency>
+            <groupId>com.stone</groupId>
+            <artifactId>stone-common-async</artifactId>
+        </dependency>
+
+        <!-- poi 导入导出-->
+        <dependency>
+            <groupId>com.stone</groupId>
+            <artifactId>stone-common-poi</artifactId>
+        </dependency>
+
+        <!-- kafka -->
+        <dependency>
+            <groupId>com.stone</groupId>
+            <artifactId>stone-common-kafka</artifactId>
+        </dependency>
+
+        <!-- redis -->
+        <dependency>
+            <groupId>com.stone</groupId>
+            <artifactId>stone-common-redis</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.stone</groupId>
+            <artifactId>stone-common-core</artifactId>
+        </dependency>
+
+        <!-- 用户中心接口 api -->
         <dependency>
             <groupId>com.stone</groupId>
             <artifactId>stone-user-center-api</artifactId>
         </dependency>
+
+        <!-- junit 测试-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
     </dependencies>
+
 </project>

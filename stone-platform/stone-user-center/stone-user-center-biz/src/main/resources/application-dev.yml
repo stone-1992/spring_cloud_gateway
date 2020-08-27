@@ -22,7 +22,7 @@ dubbo:
     name: user-center
     qos-enable: false
   protocol:
-    port: 30011
+    port: 30012
     name: dubbo
   consumer:
     check: false

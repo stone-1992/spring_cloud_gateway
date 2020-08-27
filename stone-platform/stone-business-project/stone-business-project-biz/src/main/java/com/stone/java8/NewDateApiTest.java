@@ -2,15 +2,11 @@ package com.stone.java8;
 
 import org.junit.Test;
 
-import java.text.SimpleDateFormat;
 import java.time.*;
-import java.util.Date;
-import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 
 /**
  * java8 新的时间日期 api
+ *
  * @author stone
  */
 public class NewDateApiTest {
@@ -20,7 +16,7 @@ public class NewDateApiTest {
      * 1、LocalDate  LocalTime  LocalDateTime
      */
     @Test
-    public void test1(){
+    public void test1() {
         // 1、获取实例
         LocalDateTime ldt = LocalDateTime.now();
         System.err.println("ldt : " + ldt);
@@ -48,9 +44,6 @@ public class NewDateApiTest {
 
         // 7、两个时间间间隔
         System.err.println(Duration.between(Instant.now(), Instant.now()).toNanos());
-
-
-
 
     }
 

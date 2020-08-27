@@ -21,9 +21,9 @@ import com.stone.swagger.annotation.EnableZhcxSwagger2;
 @EnableZhcxSwagger2
 @EnableDiscoveryClient
 @EnableDubbo
-public class ServiceOneApplication {
+public class StoneBusinessProjectBizApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ServiceOneApplication.class, args);
+        SpringApplication.run(StoneBusinessProjectBizApplication.class, args);
     }
 }
