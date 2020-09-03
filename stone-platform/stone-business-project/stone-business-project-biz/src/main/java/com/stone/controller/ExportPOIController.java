@@ -30,6 +30,7 @@ import java.util.Map;
 
 /**
  * 导出列
+ *
  * @author stone
  */
 @Api(tags = "导入导出API接口")
@@ -90,7 +91,7 @@ public class ExportPOIController {
         genderMap.put("2", "女");
         // 3、对字典值进行处理
         for (PersonExport personExport : result) {
-            if(genderMap.containsKey(personExport.getGender())){
+            if (genderMap.containsKey(personExport.getGender())) {
                 personExport.setGender(genderMap.get(personExport.getGender()));
             }
         }
