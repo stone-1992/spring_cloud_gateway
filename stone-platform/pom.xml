@@ -46,6 +46,7 @@
 
         <!-- 本地 mysql 连接，版本冲突, mysql 5.7 下面版本用不了-->
         <mysql.connector.version>8.0.18</mysql.connector.version>
+        <!-- 本地 mysql 用 5.1.6 , 虚拟机用 8.0.18-->
         <!--<mysql.connector.version>5.1.6</mysql.connector.version>-->
         <swagger.core.version>1.5.22</swagger.core.version>
         <swagger.fox.version>2.9.2</swagger.fox.version>
@@ -56,6 +57,10 @@
         <dubbo.version>0.2.0</dubbo.version>
         <easyexcel.version>2.1.6</easyexcel.version>
         <transmittable.version>2.2.0</transmittable.version>
+        <!--二维码生成-->
+        <google.zxing.version>3.3.0</google.zxing.version>
+        <junit.version>4.12</junit.version>
+
     </properties>
 
     <!-- 构件部署仓库 -->
@@ -72,6 +77,7 @@
         </snapshotRepository>
     </distributionManagement>-->
 
+    <!-- dependencyManagement 用于同一管理依赖版本 不实际引入jar包 -->
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -176,6 +182,26 @@
                 <version>${transmittable.version}</version>
             </dependency>
 
+            <!-- junit 测试-->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+            </dependency>
+
+            <!--Java二维码相关依赖-->
+            <dependency>
+                <groupId>com.google.zxing</groupId>
+                <artifactId>core</artifactId>
+                <version>${google.zxing.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.zxing</groupId>
+                <artifactId>javase</artifactId>
+                <version>${google.zxing.version}</version>
+            </dependency>
+
+
             <!--以下自封装模块 -->
             <!-- async 异步支持-->
             <dependency>
@@ -243,6 +269,7 @@
                 <artifactId>stone-user-center-api</artifactId>
                 <version>${revision}</version>
             </dependency>
+
         </dependencies>
     </dependencyManagement>
 

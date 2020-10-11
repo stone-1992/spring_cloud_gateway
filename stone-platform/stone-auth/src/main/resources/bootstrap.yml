@@ -13,7 +13,7 @@ spring:
         file-extension: yml
         namespace: ${zhcx.business.nacos.config.namespace.${spring.profiles.active}}
   profiles:
-    active: dev
+    active: test
 #        shared-configs:
 #          - data-id: @artifactId@-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
 #            refresh: true
@@ -29,9 +29,9 @@ zhcx:
       config:
         namespace:
           dev: 27602aba-12b9-4ad9-9657-c1cf66ae7bec
-          test: b03acc92-d77d-4ca6-aa8c-99291a520839
+          test: 27602aba-12b9-4ad9-9657-c1cf66ae7bec
           aliyun-prod: b03acc92-d77d-4ca6-aa8c-99291a520839
       server-addr:
         dev: 192.168.180.129:8848
-        test: localhost:8848
+        test: 192.168.180.132:8848
         aliyun-prod: localhost:8848

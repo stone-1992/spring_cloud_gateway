@@ -41,6 +41,7 @@ public class RedisTestController {
 			o = "test";
 		}
 		stringObjectValueOperations.set(REDIS_KEY, o);
+
 		return R.ok();
 	}
 
