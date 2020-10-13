@@ -18,6 +18,7 @@
         <module>stone-auth</module>
         <module>stone-gateway-zuul</module>
         <module>stone-user-center</module>
+        <module>stone-examples</module>
     </modules>
 
     <properties>

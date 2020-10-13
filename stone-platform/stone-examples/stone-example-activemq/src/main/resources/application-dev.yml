@@ -1,0 +1,14 @@
+spring:
+  # 基于内存的 ActiveMq
+  activemq:
+    in-memory: true
+    # 不使用连接池，如果使用连接池还需要在 pom 中添加 activemq-pool 的依赖
+    pool:
+      enabled: false
+
+# 独立的 ActiveMq
+#spring:
+#  activemq:
+#    broker-url: tcp://172.16.101.77:61616
+#    user: admin
+#    password: admin
