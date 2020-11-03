@@ -9,32 +9,29 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>stone-example-activemq</artifactId>
+    <description>activeMq测试模块</description>
 
     <dependencies>
-
         <!-- spring boot test-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
+        <!-- web 依赖-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
         <!-- spring boot activemq-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-activemq</artifactId>
         </dependency>
-
         <!-- swagger -->
         <dependency>
             <groupId>com.stone</groupId>
             <artifactId>stone-common-swagger</artifactId>
         </dependency>
     </dependencies>
-
 </project>

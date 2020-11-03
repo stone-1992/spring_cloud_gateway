@@ -9,9 +9,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <description>简单Demo测试</description>
+    <artifactId>stone-examples</artifactId>
+    <packaging>pom</packaging>
+
+
     <modules>
         <module>stone-example-activemq</module>
     </modules>
-    <artifactId>stone-examples</artifactId>
-    <packaging>pom</packaging>
 </project>

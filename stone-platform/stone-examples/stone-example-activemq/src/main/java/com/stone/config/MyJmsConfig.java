@@ -12,7 +12,8 @@ import javax.jms.Queue;
 import javax.jms.Topic;
 
 /**
- * 配置类
+ * @Author Stone
+ * @Description 配置类
  */
 @Configuration
 public class MyJmsConfig {
