@@ -31,7 +31,14 @@ public class UserController {
         int randomInt = random.nextInt();
         System.err.println(" randomInt == 1 : " + (randomInt == 1));
         if (randomInt != 1) {
+            String str = null;
+
         }
         return R.ok("测试通过");
     }
+
+    public static void main(String[] args) {
+
+    }
+
 }

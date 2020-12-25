@@ -10,6 +10,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import com.stone.redis.lock.DistributedLock;
 
@@ -34,17 +35,11 @@ public class RedisTestController {
 
 	@ApiOperation(value = "设置Redis测试接口")
 	@GetMapping("set")
-	public R<String> setRedisTest() {
+	public R<String> setRedisTest(@RequestParam(value = "value") String value) {
 		ValueOperations<String, Object> stringObjectValueOperations = redisTemplateNew.opsForValue();
-		Object o = stringObjectValueOperations.get(REDIS_KEY);
-		if(o == null){
-			o = "test";
-		}
-		stringObjectValueOperations.set(REDIS_KEY, o);
-
+		stringObjectValueOperations.set(REDIS_KEY, value);
 		return R.ok();
 	}
-
 
 	@ApiOperation(value = "查询Redis测试接口")
 	@GetMapping("get")
