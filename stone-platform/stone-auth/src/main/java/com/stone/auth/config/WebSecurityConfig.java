@@ -1,6 +1,5 @@
 package com.stone.auth.config;
 
-import com.stone.auth.support.mobile.MobileAuthenticationSecurityConfig;
 import com.stone.auth.support.webapp.WebAppAuthenticationSecurityConfig;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +20,7 @@ import org.springframework.web.cors.CorsUtils;
 /**
  * @classname WebSecurityConfig
  * @description WebSecurityConfig
- * @date 2019/12/12 15:38
+ * @author stone
  */
 @Slf4j
 @EnableWebSecurity
@@ -29,8 +28,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
     private UserDetailsService userDetailsServiceImpl;
-    @Autowired
-    private MobileAuthenticationSecurityConfig mobileAuthenticationSecurityConfig;
     @Autowired
     private WebAppAuthenticationSecurityConfig webAppAuthenticationSecurityConfig;
 
@@ -58,9 +55,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                     .antMatchers("/token/**","/actuator/**","/oauth/**","/validateCode/**").permitAll()
                 .anyRequest().authenticated()
                 .and().csrf().disable()
-                .apply(webAppAuthenticationSecurityConfig)
-                .and()
-                .apply(mobileAuthenticationSecurityConfig);
+                .apply(webAppAuthenticationSecurityConfig);
     }
 
     @Override

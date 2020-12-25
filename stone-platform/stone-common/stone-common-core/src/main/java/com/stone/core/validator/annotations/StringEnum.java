@@ -11,6 +11,7 @@ import java.lang.annotation.*;
  * @classname StrEnum
  * @description String类型枚举值校验 允许值为null
  * @date 2020/4/21 10:24
+ * @author stone
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)

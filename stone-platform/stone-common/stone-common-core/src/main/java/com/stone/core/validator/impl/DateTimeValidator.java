@@ -10,6 +10,7 @@ import java.time.format.DateTimeFormatter;
  * @classname DateTimeValidator
  * @description 日期格式校验器 yyyy-MM-dd HH:mm:ss
  * @date 2020/4/20 18:00
+ * @author stone
  */
 public class DateTimeValidator implements ConstraintValidator<DateTime, String> {
 

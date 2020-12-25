@@ -10,7 +10,7 @@ import org.springframework.web.filter.CorsFilter;
 /**
  * @classname CorsConfig
  * @description
- * @date 2020/3/19 9:12
+ * @author stone
  */
 @Configuration
 public class CorsConfig {
@@ -41,7 +41,7 @@ public class CorsConfig {
         source.registerCorsConfiguration("/**", buildConfig());
         FilterRegistrationBean<CorsFilter> bean = new FilterRegistrationBean<CorsFilter>(new CorsFilter(source));
         // 这个顺序很重要，为避免麻烦设置在最前
-        bean.setOrder(0);
+        bean.setOrder(-104);
         return bean;
     }
 }

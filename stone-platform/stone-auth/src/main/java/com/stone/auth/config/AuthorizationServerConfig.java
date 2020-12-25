@@ -1,5 +1,6 @@
 package com.stone.auth.config;
 
+import com.stone.auth.component.WebAppResponseExceptionTranslator;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,7 +10,6 @@ import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.oauth2.common.exceptions.OAuth2Exception;
 import org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer;
 import org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableAuthorizationServer;
@@ -17,7 +17,6 @@ import org.springframework.security.oauth2.config.annotation.web.configurers.Aut
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerSecurityConfigurer;
 import org.springframework.security.oauth2.provider.ClientDetailsService;
 import org.springframework.security.oauth2.provider.OAuth2Authentication;
-import org.springframework.security.oauth2.provider.error.WebResponseExceptionTranslator;
 import org.springframework.security.oauth2.provider.token.DefaultAuthenticationKeyGenerator;
 import org.springframework.security.oauth2.provider.token.TokenStore;
 import org.springframework.security.oauth2.provider.token.store.redis.RedisTokenStore;
@@ -26,7 +25,7 @@ import org.springframework.stereotype.Component;
 /**
  * @classname AuthorizationServerConfig
  * @description 认证服务器配置
- * @date 2019/12/12 15:36
+ * @author stone
  */
 @Slf4j
 @Component
@@ -42,8 +41,6 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
     private RedisConnectionFactory redisConnectionFactory;
     @Autowired
     private ClientDetailsService inMemoryClientDetailsService;
-    @Autowired
-    private WebResponseExceptionTranslator<OAuth2Exception> webResponseExceptionTranslator;
 
     @Override
     @SneakyThrows
@@ -58,7 +55,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
                 .authenticationManager(this.authenticationManager)
                 .tokenStore(tokenStore())
                 //设置登录失败错误处理器
-                .exceptionTranslator(webResponseExceptionTranslator);
+                .exceptionTranslator(new WebAppResponseExceptionTranslator());
     }
 
     @Override
@@ -77,7 +74,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
     @Bean
     public TokenStore tokenStore() {
         RedisTokenStore tokenStore = new RedisTokenStore(redisConnectionFactory);
-        tokenStore.setPrefix("bp:oauth2:");
+        tokenStore.setPrefix("bp:");
         tokenStore.setAuthenticationKeyGenerator(new DefaultAuthenticationKeyGenerator() {
             @Override
             public String extractKey(OAuth2Authentication authentication) {

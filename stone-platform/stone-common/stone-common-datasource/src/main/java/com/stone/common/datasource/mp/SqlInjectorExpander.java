@@ -11,6 +11,7 @@ import java.util.List;
  * @classname MySqlInjector
  * @description 自定义增强sql注入器
  * @date 2020/5/13 10:17
+ * @author stone
  */
 public class SqlInjectorExpander extends DefaultSqlInjector {
     @Override

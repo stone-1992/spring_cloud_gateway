@@ -1,6 +1,5 @@
 package com.stone.gateway.zuul.authorizationmodel;
 
-import com.stone.auth.po.UserInfoDTO;
 import com.stone.gateway.zuul.oauth2.AuthUserInfo;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -13,6 +12,7 @@ import org.springframework.security.oauth2.provider.authentication.OAuth2Authent
  * @version 1.0
  * @title
  * @date 2019年5月24日
+ * @author stone
  */
 public class Oauth2AuthorizationModelUtils {
 
@@ -45,7 +45,7 @@ public class Oauth2AuthorizationModelUtils {
             OAuth2Authentication oauth = (OAuth2Authentication) authentication;
             Authentication userAuthentication = oauth.getUserAuthentication();
             // 用户信息
-            UserInfoDTO userInfoDTO = (UserInfoDTO) userAuthentication.getDetails();
+            // UserInfoDTO userInfoDTO = (UserInfoDTO) userAuthentication.getDetails();
 
         }
         authUserInfo.setUserId(587L).setUsername("18565601630").setIdentifier("18565601630")

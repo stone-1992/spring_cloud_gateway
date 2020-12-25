@@ -4,6 +4,7 @@ package com.stone.redis.lock;
  * @classname DistributedLock
  * @description 分布式锁接口
  * @date 2020/4/24 16:48
+ * @author stone
  */
 public interface DistributedLock {
 

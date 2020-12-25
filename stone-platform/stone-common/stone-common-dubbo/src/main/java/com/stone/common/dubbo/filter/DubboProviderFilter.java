@@ -15,6 +15,7 @@ import model.dto.AuthUserInfoDTO;
  * @version 1.0
  * @Description
  * @date 2020年04月10日　18:15
+ * @author stone
  */
 @Slf4j
 @Activate(order = 25, group = Constants.PROVIDER)

@@ -12,6 +12,7 @@ import java.lang.annotation.Target;
  * @classname Sensitive
  * @description 对象脱敏注解
  * @date 2019/12/3 10:50
+ * @author stone
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD)

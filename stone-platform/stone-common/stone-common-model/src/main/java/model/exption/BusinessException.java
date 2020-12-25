@@ -7,6 +7,7 @@ import lombok.EqualsAndHashCode;
  * @classname BusinessException
  * @description 业务异常
  * @date 2020/4/23 9:59
+ * @author stone
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

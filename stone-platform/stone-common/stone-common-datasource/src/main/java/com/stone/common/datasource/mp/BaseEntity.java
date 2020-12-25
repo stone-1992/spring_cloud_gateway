@@ -10,6 +10,7 @@ import java.util.Date;
  * @title
  * @date 2020年5月12日
  * @version 1.0
+ * @author stone
  */
 @Data
 public class BaseEntity {

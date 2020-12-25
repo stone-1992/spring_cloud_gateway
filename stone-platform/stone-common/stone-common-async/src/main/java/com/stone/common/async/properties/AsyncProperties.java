@@ -7,6 +7,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  * @classname AsyncProperties
  * @description 异步线程池配置
  * @date 2020/3/20 9:12
+ * @author stone
  */
 @Data
 @ConfigurationProperties(prefix = "zhcx.business.async")

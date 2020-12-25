@@ -15,7 +15,7 @@ import java.util.Map;
 /**
  * @classname OAuth2ClientConfig
  * @description 导入OAuth2ClientProperties
- * @date 2020/3/3 15:06
+ * @author stone
  */
 @Slf4j
 @Import(OAuth2ClientProperties.class)

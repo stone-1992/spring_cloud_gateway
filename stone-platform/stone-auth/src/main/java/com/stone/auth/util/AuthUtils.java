@@ -6,7 +6,6 @@ import lombok.experimental.UtilityClass;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.oauth2.common.OAuth2AccessToken;
 import org.springframework.security.oauth2.common.exceptions.UnapprovedClientAuthenticationException;
-
 import javax.servlet.http.HttpServletRequest;
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;
@@ -14,8 +13,7 @@ import java.util.Enumeration;
 
 /**
  * 认证授权相关工具类
- *
- * @date 2020/3/3
+ * @author stone
  */
 @Slf4j
 @UtilityClass

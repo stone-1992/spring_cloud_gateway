@@ -9,6 +9,7 @@ import java.lang.annotation.*;
  * @title 
  * @date 2020年3月3日
  * @version 1.0
+ * @author stone
  */
 @Target({ ElementType.TYPE })
 @Retention(RetentionPolicy.RUNTIME)

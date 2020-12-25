@@ -18,6 +18,7 @@ import java.util.TimeZone;
  * @classname JacksonConfig
  * @description Jackson配置
  * @date 2020/1/3 15:39
+ * @author stone
  */
 @Configuration
 @ConditionalOnClass(ObjectMapper.class)

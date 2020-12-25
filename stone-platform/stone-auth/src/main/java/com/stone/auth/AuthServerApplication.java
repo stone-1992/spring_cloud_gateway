@@ -6,9 +6,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
- * @classname AuthServerApplication
  * @description 认证服务器启动类
- * @date 2019/12/12 15:41
+ * @author stone
  */
 @EnableFeignClients
 @EnableDiscoveryClient

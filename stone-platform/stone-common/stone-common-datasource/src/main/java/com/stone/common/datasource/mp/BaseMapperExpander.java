@@ -13,6 +13,7 @@ import java.util.List;
  * @classname MyBaseMapper
  * @description 自定义BaseMapper增强
  * @date 2020/5/13 10:18
+ * @author stone
  */
 public interface BaseMapperExpander<T> extends BaseMapper<T> {
     /**

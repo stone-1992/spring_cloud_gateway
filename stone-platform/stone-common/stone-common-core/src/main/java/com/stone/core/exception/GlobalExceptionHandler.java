@@ -15,6 +15,7 @@ import org.springframework.web.multipart.MaxUploadSizeExceededException;
  * @classname GlobalExceptionHandler
  * @description 全局异常处理器
  * @date 2018/5/11
+ * @author stone
  */
 @Slf4j
 @RestControllerAdvice

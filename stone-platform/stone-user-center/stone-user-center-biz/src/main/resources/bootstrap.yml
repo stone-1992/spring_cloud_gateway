@@ -1,0 +1,26 @@
+server:
+  port: 8005
+  servlet:
+    context-path: /user-center
+spring:
+  application:
+    name: user-center
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${nacos.server-addr.${spring.profiles.active}}       # nacos 服务注册中心地址
+        namespace: ${nacos.config.namespace.${spring.profiles.active}}
+      config:
+        server-addr: ${nacos.server-addr.${spring.profiles.active}}       # nacos 作为配置中心地址
+        file-extension: yml                                               # 指定 yml 的配置
+        namespace: ${nacos.config.namespace.${spring.profiles.active}}
+  profiles:
+    active: dev
+nacos:
+  config:
+    namespace:
+      dev: 27602aba-12b9-4ad9-9657-c1cf66ae7bec
+      test: 27602aba-12b9-4ad9-9657-c1cf66ae7bec
+  server-addr:
+    dev: 192.168.180.129:8848
+    test: 192.168.180.132:8848

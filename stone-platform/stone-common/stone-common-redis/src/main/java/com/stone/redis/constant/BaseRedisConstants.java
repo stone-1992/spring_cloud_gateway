@@ -4,6 +4,7 @@ package com.stone.redis.constant;
  * @classname BaseConstant
  * @description 基础redis前缀
  * @date 2020/4/23 9:59
+ * @author stone
  */
 public interface BaseRedisConstants {
     String BASE = "bp:";

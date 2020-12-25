@@ -15,6 +15,7 @@ import java.util.Date;
  * @classname MyBatisPlusConfig
  * @description MyBatisPlus配置
  * @date 2019/7/18
+ * @author stone
  */
 @Slf4j
 @Configuration

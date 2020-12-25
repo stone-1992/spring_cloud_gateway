@@ -18,13 +18,19 @@ public class BigDecimalValidator implements ConstraintValidator<BigDecimalCheck,
 
     private double minValue;
 
-    /*最大值*/
+    /**
+     * 最大值
+     */
     private double maxValue;
 
-    /*整数位数*/
+    /**
+     * 整数位数
+     */
     private int integer;
 
-    /*小数位数*/
+    /**
+     * 小数位数
+     */
     private int fraction;
 
     @Override

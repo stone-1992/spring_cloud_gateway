@@ -13,6 +13,7 @@ import java.lang.reflect.Method;
  * @classname ExceptionFilter
  * @description 重写dubbo异常过滤器 用于处理自定义异常
  * @date 2020/5/14 8:50
+ * @author stone
  */
 @Slf4j
 @Activate(group = Constants.PROVIDER)

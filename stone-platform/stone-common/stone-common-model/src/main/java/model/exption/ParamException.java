@@ -7,6 +7,7 @@ import lombok.EqualsAndHashCode;
  * @title 
  * @date 2019年11月12日
  * @version 1.0
+ * @author stone
  */
 @EqualsAndHashCode(callSuper = false)
 public class ParamException extends RuntimeException {

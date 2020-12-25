@@ -7,6 +7,7 @@ import java.util.Deque;
  * @classname DynamicContextHolder
  * @description 多数据源上下文
  * @date 2019/11/5 13:25
+ * @author stone
  */
 public class DynamicContextHolder {
     private static final ThreadLocal<Deque<String>> CONTEXT_HOLDER = ThreadLocal.withInitial(() -> new ArrayDeque<String>());

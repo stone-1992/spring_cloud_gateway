@@ -13,6 +13,7 @@ import java.util.Objects;
  * @title
  * @date 2019年11月12日
  * @version 1.0
+ * @author stone
  */
 @ApiModel(value = "分页对象实体")
 @NoArgsConstructor

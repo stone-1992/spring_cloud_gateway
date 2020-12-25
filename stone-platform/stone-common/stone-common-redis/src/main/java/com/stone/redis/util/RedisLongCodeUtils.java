@@ -4,6 +4,9 @@ import cn.hutool.core.util.StrUtil;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.support.atomic.RedisAtomicLong;
 
+/**
+ * @author stone
+ */
 public class RedisLongCodeUtils {
 
     /**

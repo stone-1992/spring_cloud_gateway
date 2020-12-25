@@ -13,6 +13,7 @@ import java.util.List;
  * @title 
  * @date 2020年2月18日
  * @version 1.0
+ * @author stone
  */
 @Data
 @ConfigurationProperties("swagger")

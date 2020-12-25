@@ -9,6 +9,7 @@ import lombok.Data;
  * @title
  * @date 2020年3月2日
  * @version 1.0
+ * @author stone
  */
 @Data
 @ConfigurationProperties("spring.dubbo")

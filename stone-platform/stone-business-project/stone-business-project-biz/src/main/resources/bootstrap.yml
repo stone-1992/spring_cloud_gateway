@@ -1,0 +1,36 @@
+server:
+  port: 8001
+  servlet:
+    context-path: /business-project
+spring:
+  application:
+    name: business-project
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${nacos.server-addr.${spring.profiles.active}}       # nacos 服务注册中心地址
+        namespace: ${nacos.config.namespace.${spring.profiles.active}}
+      config:
+        server-addr: ${nacos.server-addr.${spring.profiles.active}}       # nacos 作为配置中心地址
+        file-extension: yml                                               # 指定 yml 的配置
+        namespace: ${nacos.config.namespace.${spring.profiles.active}}
+    sentinel:
+      transport:
+        # 配置 sentinel dashboard 地址
+        dashboard: localhost:8080
+        # 默认 8791 端口，加入被占用会自动从8719开始依次+1扫描，直至找到未被占用的端口
+        port: 8719
+  profiles:
+    active: dev
+nacos:
+  config:
+    namespace:
+      dev: 27602aba-12b9-4ad9-9657-c1cf66ae7bec
+  server-addr:
+    dev: 192.168.180.129:8848
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

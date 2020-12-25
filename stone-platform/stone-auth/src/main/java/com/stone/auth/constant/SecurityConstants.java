@@ -3,7 +3,7 @@ package com.stone.auth.constant;
 /**
  * @classname SecurityConstants
  * @description Security常量
- * @date 2020/3/3 16:24
+ * @author stone
  */
 public interface SecurityConstants {
 

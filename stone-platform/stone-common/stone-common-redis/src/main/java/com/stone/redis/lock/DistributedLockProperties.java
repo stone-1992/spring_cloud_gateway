@@ -9,6 +9,7 @@ import static com.stone.redis.constant.BaseRedisConstants.BASE;
  * @classname DistributedLockProperties
  * @description
  * @date 2020/4/26 11:49
+ * @author stone
  */
 @Data
 @ConfigurationProperties(prefix = "zhcx.business.redis.lock")

@@ -12,6 +12,7 @@ import org.springframework.web.filter.CorsFilter;
  * @title 
  * @date 2020年4月8日
  * @version 1.0
+ * @author stone
  */
 @Configuration
 public class CorsConfig {

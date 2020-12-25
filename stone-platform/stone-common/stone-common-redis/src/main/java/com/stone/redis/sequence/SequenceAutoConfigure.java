@@ -13,6 +13,7 @@ import com.stone.redis.sequence.properties.SequenceProperties;
  * @classname SequenceAutoConfigure
  * @description redis id生成器自动配置
  * @date 2020/4/24 14:20
+ * @author stone
  */
 @EnableConfigurationProperties({SequenceProperties.class})
 @Configuration

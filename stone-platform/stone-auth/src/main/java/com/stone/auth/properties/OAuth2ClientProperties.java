@@ -11,7 +11,7 @@ import java.util.Set;
 /**
  * @classname OAuth2ClientProperties
  * @description
- * @date 2020/4/9 15:17
+ * @author stone
  */
 @ConfigurationProperties(prefix = "spring.security.oauth2.client")
 public class OAuth2ClientProperties {
@@ -19,7 +19,7 @@ public class OAuth2ClientProperties {
     /**
      * OAuth provider details.
      */
-    private final Map<String, Provider> provider = new HashMap<>();
+    private final Map<String,OAuth2ClientProperties.Provider> provider = new HashMap<>();
 
     /**
      * OAuth client registrations.

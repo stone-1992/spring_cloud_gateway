@@ -6,6 +6,7 @@ import lombok.Data;
  * @classname DataSourceProperties
  * @description 多数据源属性
  * @date 2019/11/5 13:25
+ * @author stone
  */
 @Data
 public class DataSourceProperties {
