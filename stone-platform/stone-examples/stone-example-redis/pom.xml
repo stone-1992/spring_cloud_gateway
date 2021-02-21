@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>stone-examples</artifactId>
+        <groupId>com.stone</groupId>
+        <version>${revision}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>stone-example-redis</artifactId>
+    <description>redis Demo 项目</description>
+
+    <dependencies>
+        <!-- spring boot test-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <!-- web 依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!-- redis-->
+        <dependency>
+            <groupId>com.stone</groupId>
+            <artifactId>stone-common-redis</artifactId>
+        </dependency>
+        <!-- swagger -->
+        <dependency>
+            <groupId>com.stone</groupId>
+            <artifactId>stone-common-swagger</artifactId>
+        </dependency>
+    </dependencies>
+</project>

@@ -15,5 +15,7 @@
 
     <modules>
         <module>stone-example-activemq</module>
+        <module>stone-example-redis</module>
+        <module>stone-example-design</module>
     </modules>
 </project>

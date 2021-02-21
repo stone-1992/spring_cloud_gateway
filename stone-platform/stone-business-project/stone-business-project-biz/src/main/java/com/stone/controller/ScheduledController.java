@@ -27,9 +27,9 @@ public class ScheduledController {
     @Scheduled(fixedRate = 60 * 1000)
     public void testTasks() {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        String str = null;
+        String str;
         try {
-            str = simpleDateFormat.format(new Date()).toString();
+            str = simpleDateFormat.format(new Date());
             System.out.println("定时任务执行时间：" + str);
         } catch (Exception e) {
             e.printStackTrace();
