@@ -27,7 +27,7 @@ nacos:
     namespace:
       dev: 27602aba-12b9-4ad9-9657-c1cf66ae7bec
   server-addr:
-    dev: 192.168.180.129:8848
+    dev: 192.168.180.134:8848
 
 management:
   endpoints:

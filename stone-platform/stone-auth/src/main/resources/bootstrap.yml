@@ -32,6 +32,6 @@ zhcx:
           test: 27602aba-12b9-4ad9-9657-c1cf66ae7bec
           aliyun-prod: b03acc92-d77d-4ca6-aa8c-99291a520839
       server-addr:
-        dev: 192.168.180.129:8848
+        dev: 192.168.180.134:8848
         test: 192.168.180.132:8848
         aliyun-prod: localhost:8848
