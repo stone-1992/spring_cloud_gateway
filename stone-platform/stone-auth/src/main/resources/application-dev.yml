@@ -5,11 +5,11 @@ spring:
 #      nodes: 172.16.102.104:26379,172.16.102.104:26378,172.16.102.104:26377
     port: 6379
     database: 4
-    host: 192.168.180.134
-    password: 123456
+    host: 120.77.254.22
+    password: 12345678
 dubbo:
   registry:
-    address: zookeeper://192.168.180.134:2181
+    address: zookeeper://120.77.254.22:2181
   application:
     name: @artifactId@
     qos-enable: false
