@@ -2,7 +2,7 @@ spring:
   redis:
     port: 6379
     database: 4
-    host: 120.77.254.22
+    host: 47.100.70.167
     password: 12345678
   main:
     allow-bean-definition-overriding: true
