@@ -69,7 +69,7 @@ public class SiteController {
 
     @ApiOperation(value = "删除站点")
     @DeleteMapping("delete")
-    public R delete(@RequestParam(value = "siteId", required = true) Long siteId) {
+    public R delete(@RequestParam(value = "siteId") Long siteId) {
         // 业务逻辑处理
         siteService.deleteSite(siteId);
         return R.ok();

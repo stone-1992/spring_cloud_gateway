@@ -85,12 +85,6 @@
             <artifactId>stone-common-core</artifactId>
         </dependency>
 
-        <!-- 用户中心接口 api -->
-        <dependency>
-            <groupId>com.stone</groupId>
-            <artifactId>stone-user-center-api</artifactId>
-        </dependency>
-
         <!-- junit 测试-->
         <dependency>
             <groupId>junit</groupId>
@@ -108,5 +102,21 @@
         </dependency>
 
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

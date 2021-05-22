@@ -18,7 +18,7 @@ spring:
           - Path=/service-two/**
       - id: user-center
         uri: lb://user-center
-        order: 8005
+        order: 9001
         predicates:
           - Path=/user-center/**
       - id: business-project

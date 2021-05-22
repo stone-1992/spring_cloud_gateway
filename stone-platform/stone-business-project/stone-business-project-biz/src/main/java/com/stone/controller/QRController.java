@@ -103,4 +103,6 @@ public class QRController {
         response.setHeader("filename", fileName);
         response.getOutputStream().write(qrCode);
     }
+
+
 }

@@ -13,8 +13,6 @@ spring:
 nacos:
   config:
     namespace:
-      dev: 27602aba-12b9-4ad9-9657-c1cf66ae7bec
-      test: 27602aba-12b9-4ad9-9657-c1cf66ae7bec
+      dev: e94b57e8-7d61-4e0d-a03f-2c8bc569c825
   server-addr:
-    dev: 192.168.180.129:8848
-    test: 192.168.180.132:8848
+    dev: 47.100.70.167:8848
