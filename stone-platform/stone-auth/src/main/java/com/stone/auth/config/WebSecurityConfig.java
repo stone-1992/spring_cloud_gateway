@@ -28,6 +28,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
     private UserDetailsService userDetailsServiceImpl;
+
     @Autowired
     private WebAppAuthenticationSecurityConfig webAppAuthenticationSecurityConfig;
 

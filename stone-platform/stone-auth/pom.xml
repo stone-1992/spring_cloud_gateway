@@ -47,15 +47,41 @@
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
         </dependency>
-        <!-- 用户中心接口-->
-        <dependency>
-            <groupId>com.stone</groupId>
-            <artifactId>stone-user-center-api</artifactId>
-        </dependency>
         <!-- dubbo -->
         <dependency>
             <groupId>com.stone</groupId>
             <artifactId>stone-common-dubbo</artifactId>
+        </dependency>
+        <!--测试依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <!--配置中心-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+        <!-- core 核心库-->
+        <dependency>
+            <groupId>com.stone</groupId>
+            <artifactId>stone-common-core</artifactId>
+        </dependency>
+        <!-- datasource 数据库-->
+        <dependency>
+            <groupId>com.stone</groupId>
+            <artifactId>stone-common-datasource</artifactId>
+        </dependency>
+        <!-- swagger -->
+        <dependency>
+            <groupId>com.stone</groupId>
+            <artifactId>stone-common-swagger</artifactId>
+        </dependency>
+        <!-- poi 导入导出-->
+        <dependency>
+            <groupId>com.stone</groupId>
+            <artifactId>stone-common-poi</artifactId>
         </dependency>
     </dependencies>
 

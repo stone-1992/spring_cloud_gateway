@@ -18,5 +18,6 @@
         <module>stone-example-redis</module>
         <module>stone-example-design</module>
         <module>stone-example-jta</module>
+        <module>stone-example-springboot</module>
     </modules>
 </project>

@@ -85,12 +85,6 @@
             <artifactId>stone-common-core</artifactId>
         </dependency>
 
-        <!-- 用户中心接口 api -->
-        <dependency>
-            <groupId>com.stone</groupId>
-            <artifactId>stone-user-center-api</artifactId>
-        </dependency>
-
         <!-- junit 测试-->
         <dependency>
             <groupId>junit</groupId>

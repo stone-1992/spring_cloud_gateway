@@ -1,6 +1,6 @@
 package com.stone.auth.model;
 
-import com.stone.vo.UserAuth;
+import com.stone.auth.model.domain.UserAuth;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
@@ -18,6 +18,7 @@ import java.util.Collection;
 @EqualsAndHashCode(callSuper = false)
 @NoArgsConstructor
 public class LoginUser extends UserAuth implements UserDetails {
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return null;
