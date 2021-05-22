@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>stone-auth</artifactId>
+    <artifactId>stone-user-center</artifactId>
 
     <dependencies>
         <!--安全模块 -->

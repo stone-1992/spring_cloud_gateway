@@ -15,7 +15,7 @@
         <module>stone-gateway</module>
         <module>stone-eureka-server</module>
         <module>stone-business-project</module>
-        <module>stone-auth</module>
+        <module>stone-user-center</module>
         <module>stone-gateway-zuul</module>
         <module>stone-examples</module>
     </modules>
@@ -212,7 +212,7 @@
             <!-- auth-->
             <dependency>
                 <groupId>com.stone</groupId>
-                <artifactId>stone-auth</artifactId>
+                <artifactId>stone-user-center</artifactId>
                 <version>${revision}</version>
             </dependency>
             <!-- 核心 core-->

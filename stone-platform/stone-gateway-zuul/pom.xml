@@ -52,7 +52,7 @@
 
         <dependency>
             <groupId>com.stone</groupId>
-            <artifactId>stone-auth</artifactId>
+            <artifactId>stone-user-center</artifactId>
         </dependency>
 
         <dependency>
