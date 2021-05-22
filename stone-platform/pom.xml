@@ -13,7 +13,6 @@
     <modules>
         <module>stone-common</module>
         <module>stone-gateway</module>
-        <module>stone-eureka-server</module>
         <module>stone-business-project</module>
         <module>stone-user-center</module>
         <module>stone-gateway-zuul</module>
