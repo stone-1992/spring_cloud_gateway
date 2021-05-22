@@ -17,7 +17,6 @@
         <module>stone-business-project</module>
         <module>stone-auth</module>
         <module>stone-gateway-zuul</module>
-        <module>stone-user-center</module>
         <module>stone-examples</module>
     </modules>
 
@@ -264,13 +263,6 @@
                 <artifactId>stone-common-swagger</artifactId>
                 <version>${revision}</version>
             </dependency>
-            <!-- user-center-api-->
-            <dependency>
-                <groupId>com.stone</groupId>
-                <artifactId>stone-user-center-api</artifactId>
-                <version>${revision}</version>
-            </dependency>
-
         </dependencies>
     </dependencyManagement>
 
