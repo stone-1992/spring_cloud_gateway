@@ -59,7 +59,7 @@
         <transmittable.version>2.2.0</transmittable.version>
         <!--二维码生成-->
         <google.zxing.version>3.3.0</google.zxing.version>
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
     </properties>
 
     <!-- 构件部署仓库 -->
