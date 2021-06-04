@@ -51,7 +51,7 @@
         <swagger.core.version>1.5.22</swagger.core.version>
         <swagger.fox.version>2.9.2</swagger.fox.version>
         <knife4j.version>2.0.2</knife4j.version>
-        <httpclient.version>4.5.3</httpclient.version>
+        <httpclient.version>4.5.13</httpclient.version>
         <hutool.version>5.1.4</hutool.version>
         <easy.captcha.version>1.6.2</easy.captcha.version>
         <dubbo.version>0.2.0</dubbo.version>
