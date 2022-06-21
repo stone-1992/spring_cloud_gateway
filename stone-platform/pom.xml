@@ -45,7 +45,7 @@
         <druid.version>1.1.22</druid.version>
 
         <!-- 本地 mysql 连接，版本冲突, mysql 5.7 下面版本用不了-->
-        <mysql.connector.version>8.0.18</mysql.connector.version>
+        <mysql.connector.version>8.0.28</mysql.connector.version>
         <!-- 本地 mysql 用 5.1.6 , 虚拟机用 8.0.18-->
         <!--<mysql.connector.version>5.1.6</mysql.connector.version>-->
         <swagger.core.version>1.5.22</swagger.core.version>
